@@ -1,9 +1,9 @@
 2de5c6899062e18e847d4d7044c7e4cb6c9881fdd367782bba8f9238b27c21c8  ./.gitignore
-d6f9a2fd460876b74397f051ef7a83363733f215fe656848122270596d97801d  ./AGENTS.md
-2f8d61de7f073b230ef4ebfd33854c06bd9f1664f046ef742aa54d7eea02eb47  ./CHANGELOG.md
-05bd3c7eb14e181a4aa8decf21d33281a9982e9db59b51d1e70661ddaf77aa5a  ./PROJECT_TREE.md
-2cfdc1687772439fa200429b2f3f181715899e8499585dde38601478eeddb76a  ./README.md
-1f046a0fb4f512792f15f82cd23b9715bac56d6d269db2fe35dd40ed692b3899  ./commissioning/README.md
+0383ca97a7e5092dcdebe96db244af7c95dee98684f1920d35702ef46b6d055e  ./AGENTS.md
+8a21bcdd4203fd19ef9fab8421859074b6cecfd14887585238a47c583984d477  ./CHANGELOG.md
+b9248928e137c99a7d1f033c9f9741f744309daaefa242c9f782ce5c0e9dbe36  ./PROJECT_TREE.md
+c95b216384382ccecfc6e958df887147e4a82ad374e380665df4aa73d6b287e5  ./README.md
+9f55d38a2f8a32b277f27c34afdc365b48dbcc9fb1c89899c04fc0901bd05bbc  ./commissioning/README.md
 4fa6b601ff2e77c89864bb3ef5b1d61124a17ea6f9875983a6ff8676ef99ee4d  ./config/home-assistant/hitachi/README.md
 bd2a1613fecad67ffde751ba6096f750361a4a8086d5ea521a3c3acd1f566f2e  ./config/home-assistant/hitachi/hitachi_modbus_readonly.yaml.example
 5ed3026a8dc8ee36f98446476e95dd6f0d0ee2827c597a2b8b3e41c524546614  ./config/home-assistant/hitachi/secrets.yaml.example
@@ -42,10 +42,16 @@ d0891557ee828436622a1e6b301e02d1afd1f80e61a13f10935de88fc93d32d8  ./docs/archive
 08c23c04c703346d93a110137dbf00df2db3e0ad6852e23cd4e3ce682cbef275  ./docs/current/开源平台选型与自研边界_V1.md
 de39b0cf46294c5a7ad2d44a45d2def21f3ecf2f473aa9d594b30d05a69b264e  ./docs/current/日立中央空调_Modbus接入与调试_V1.md
 4704111ee9c3aa603087678624e9c1e7d1ec015460a044fa680c5aba0a410a27  ./docs/current/日立室内机房间映射表.md
+e05f138a9cdba2acfadf360bf099d15b7470e480b3498fc56a9919fecc46ff06  ./docs/current/架构审计与首期硬件清单_V1.md
 a84145a5d163ab470a39c6ebfb81b3df8907d0dba7ebcb73bf4f39fd14c44583  ./docs/current/网络与智能家居方案_早期图纸版.pdf
 8c4996ae191865beb2619567239ddb26240df46c884a1e450e04d98122cb4917  ./docs/current/装修施工交底_网络与智能家居_V2.1.md
 8e8c6f7808ecc86aef48ba3f9327035260213e263fb33594f7513fd308a34d25  ./external/README.md
-4b894a48068d70c044c468d7dc687b1516ba3d45b2b12c9262a70ccb737f15b5  ./inventory/README.md
+1e1d6a319e39f3ca582fa1ec0f7983b59e22f74c9a7f40961d23f3b2bee53ea1  ./inventory/README.md
+b04c33a62906fc1ddb5b3794c784e6ecbeaff9ff52d054a87f8d378cc4f6428f  ./inventory/devices.csv
+1589ce22f24d68491d7b507063936c89e42dfef68338d4fd57e48bcd2a8279cb  ./inventory/ip_plan.md
+5493bafac12adefe3430f1062debd154edd75712ae14c9b9b53210b6de6fcd70  ./inventory/network_ports.csv
+dbf214392ab1e02d10f7ff283250a0e83ca7b90ffde41e739fc83c0bdbb21298  ./inventory/purchase_candidates.md
+83b4ea624ba1988e94209b5e17b42477ad79d631af271bc550fbfd07a5b5d8b2  ./inventory/rs485_channels.md
 fc8f668d84ec14b4cceb15ddd626baf828da957ada44d32d4000a9b4464567fe  ./references/Modbus & MiniModbus 协议转换器专用点表(多联机系统用)4.17.pdf
 cbb643b5753672a2920a018b684fab9795e60a7b2e302d943f20b3ca594368e5  ./references/原始户型图.png
 fc8f668d84ec14b4cceb15ddd626baf828da957ada44d32d4000a9b4464567fe  ./references/日立中央空调/Modbus_MiniModbus_协议转换器专用点表_多联机_4.17.pdf
@@ -53,5 +59,5 @@ fc8f668d84ec14b4cceb15ddd626baf828da957ada44d32d4000a9b4464567fe  ./references/�
 56be6aa252666c53dae251c81e67cac915c5ae6376699eb64d3ec8905f6fce25  ./scripts/copy_to_projects.sh
 ccbf9ea96786efb9fb0c70545cfae199e30d6046f7357573cbfa9ac87ab2c2e4  ./scripts/generate_hitachi_ha_yaml.py
 9db84e0dad073b35bf9c4082b064519fc71b3646d85452f72a10eb8d4bd28726  ./software/README.md
-35b23f5f8ae2e63ea29849471ac7fd1ecadd55728b57fa1340de7fa510eb00c4  ./software/modbus-tools/README.md
-45138b28acb891cbe6219d0434f8f0fca1d68075fa3fe36ee2dbe0eff789a9c4  ./software/smarthouse-core/README.md
+ecf8826a1e726b607f60c5606558bc2a8c3c443bf1571f2aff3fa6f95ae7cf87  ./software/modbus-tools/README.md
+731a6a407099cad9071f5a44e74739288e2946edef5555bfff2a8e89ec8413c0  ./software/smarthouse-core/README.md

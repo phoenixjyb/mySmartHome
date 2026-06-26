@@ -5,7 +5,7 @@ Planned self-built service layer for house-specific logic.
 Initial responsibilities:
 
 - Guarded Hitachi HVAC writes.
-- Guarded Gree/Gen humidifier writes.
+- Guarded 格恩/Gen humidifier writes.
 - Write queue, rate limits, precondition checks, and write-after-readback.
 - Audit log for all control actions.
 - MQTT/REST/WebSocket interface for Home Assistant.

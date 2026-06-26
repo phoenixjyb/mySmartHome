@@ -10,6 +10,7 @@ smartHouse/
 │   ├── 日立室内机房间映射表.md
 │   ├── 开源平台选型与自研边界_V1.md
 │   ├── 实施路线图与仓库结构_V1.md
+│   ├── 架构审计与首期硬件清单_V1.md
 │   └── 装修施工交底_网络与智能家居_V2.1.md
 ├── config/home-assistant/hitachi/
 │   ├── README.md
@@ -21,7 +22,13 @@ smartHouse/
 ├── software/
 │   ├── smarthouse-core/README.md
 │   └── modbus-tools/README.md
-├── inventory/README.md
+├── inventory/
+│   ├── README.md
+│   ├── purchase_candidates.md
+│   ├── network_ports.csv
+│   ├── ip_plan.md
+│   ├── rs485_channels.md
+│   └── devices.csv
 ├── commissioning/README.md
 ├── external/README.md
 ├── references/

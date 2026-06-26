@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Architecture audit and initial inventory - 2026-06-26
+
+- 新增 `docs/current/架构审计与首期硬件清单_V1.md`，审计控制主机、交换机端口、AP、Zigbee、RS-485 和装修队交付边界。
+- 新增 `inventory/purchase_candidates.md`，形成首期 P0/P1/P2 采购候选清单。
+- 新增 `inventory/network_ports.csv`、`inventory/ip_plan.md`、`inventory/rs485_channels.md`、`inventory/devices.csv`。
+- 将首期建议调整为：mini PC/Mac mini 优先、24 口交换机优先评估、PoE/Ethernet Zigbee 协调器、4 路隔离 RS-485 网关。
+
 ## Repository planning - 2026-06-26
 
 - 新增 `开源平台选型与自研边界_V1.md`，明确 Home Assistant、Mosquitto、Zigbee2MQTT、ESPHome、SmartHouse Core 的分工。

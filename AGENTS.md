@@ -31,6 +31,8 @@ Use these files first:
 - `docs/current/日立室内机房间映射表.md` for site mapping during HVAC commissioning.
 - `docs/current/开源平台选型与自研边界_V1.md` for open-source platform adoption versus self-built boundaries.
 - `docs/current/实施路线图与仓库结构_V1.md` for phases, repo structure, and submodule policy.
+- `docs/current/架构审计与首期硬件清单_V1.md` for current architecture audit and initial hardware choices.
+- `inventory/` for initial hardware purchase candidates, network ports, VLAN/IP plan, RS-485 channels, and device inventory.
 - `config/home-assistant/hitachi/` for read-only Home Assistant examples.
 - `diagrams/架构图索引.md` and `diagrams/sources/*.dot` for diagram maintenance.
 
@@ -78,7 +80,7 @@ Do not treat "has RS-485" as proof of integration. Require protocol-level eviden
 Keep different RS-485 systems on separate isolated channels by default. The current split is:
 
 - Port 1: Hitachi Modbus/MiniModbus converter. Point table exists, but converter model, serial settings, slave address, function codes, and address offset still require manual/vendor/site confirmation.
-- Port 2: Gree/Gen central humidifier. Current workbook indicates RS-485 / Modbus RTU, 9600 8N1, FC03 reads, with writable controls that still need write function code and reset behavior confirmation.
+- Port 2: 格恩/Gen central humidifier. Current workbook indicates RS-485 / Modbus RTU, 9600 8N1, FC03 reads, with writable controls that still need write function code and reset behavior confirmation.
 - Port 3: future meter/water meter reserve.
 - Port 4: future Daikin alternative or other equipment reserve.
 

@@ -1,0 +1,19 @@
+id,location,port_count,cable_type,termination,target_vlan,initial_patch,installer_notes,status
+AP1,左侧中央走廊吊顶,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；覆盖Bedroom1/Bedroom2/厨房/储物间,planned
+AP2,客厅中部偏右吊顶,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；覆盖客厅/Bedroom3/两个阳台,planned
+AP-R,卧室3外走廊或吊顶检修区,0-1,空管 or Cat6,24口配线架,20 Automation,no,只预留；实测后再决定是否采购AP3,optional
+B1-DATA-1,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,yes,RTX 3090工作站优先使用,planned
+B1-DATA-2,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,no,扩展坞/NAS/备用,planned
+B2-DATA-1,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,yes,未来台式机,planned
+B2-DATA-2,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,no,备用,planned
+BAL1-DATA,Balcony1 P2S区,1,Cat6A,24口配线架,30 IoT,no,P2S本体使用Wi-Fi；网口备用,planned
+BAL2-DATA,Balcony2,1,Cat6,24口配线架,30 IoT,no,洗衣/环境设备/备用,planned
+PJ-DATA,客厅投影位置,1,Cat6,24口配线架,30 IoT,no,投影可Wi-Fi；网线备用,planned
+AV-DATA-1,客厅影音柜,1,Cat6,24口配线架,30 IoT,yes,播放器/功放/小交换机,planned
+AV-DATA-2,客厅影音柜,1,Cat6,24口配线架,30 IoT,no,备用；如施工方便保留第二根,optional
+MAC-HOST,储物间主控,1,Cat6A,24口配线架,20 Automation,yes,mini PC/Mac mini Home Assistant主机,planned
+ZIGBEE-POE,中央走廊开放位置,1,Cat6,24口配线架,20 Automation,yes,PoE/Ethernet Zigbee协调器；不得放金属机柜,planned
+RS485-GW,储物间RS-485网关,1,Cat6,24口配线架,20 Automation,yes,4路隔离RS-485网关以太网接入,planned
+ENTRY-H,入户门上方高位,1,Cat6,24口配线架,40 Security,no,PoE摄像头候选；物业和隐私确认后安装,planned
+ENTRY-L,入户门旁低位,1,Cat6 or 空管,24口配线架,40 Security,no,PoE门铃候选；可只留空管,planned
+NAS-RESERVE,储物间/NAS预留,1,Cat6A,24口配线架,10 Trusted,no,未来NAS；可先不跳接,optional
