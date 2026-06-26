@@ -1,0 +1,50 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.35, ranksep=0.55, fontname="Noto Sans CJK SC", labelloc="t", label="全屋网络架构 V3.2", fontsize=24];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK SC", fontsize=12, color="#607080", margin="0.18,0.10"];
+  edge [fontname="Noto Sans CJK SC", fontsize=10, color="#657786", penwidth=1.4];
+
+  internet [label="1000M 互联网", shape=ellipse, fillcolor="#E8F2FC", color="#2474B5"];
+  ont [label="光猫 / ONT", fillcolor="#F2F5F8"];
+  router [label="独立路由器 / 防火墙\nOPNsense 或 OpenWrt\nWireGuard + VLAN", fillcolor="#DDEAF7", color="#2474B5", penwidth=2];
+  sw [label="16口可管理 PoE+ 交换机\n≥8 PoE+｜≥4×2.5G｜可选2×10G/SFP+", fillcolor="#DDEAF7", color="#2474B5", penwidth=2];
+  internet -> ont -> router [label="WAN"]; router -> sw [label="2.5GbE trunk"];
+
+  subgraph cluster_mgmt { label="VLAN 99 管理"; color="#6E7B88"; style="rounded";
+    ap1 [label="AP1 走廊\nPoE", fillcolor="#F2F4F7"];
+    ap2 [label="AP2 客厅\nPoE", fillcolor="#F2F4F7"];
+    netdev [label="交换机 / AP 管理", fillcolor="#F2F4F7"];
+  }
+  subgraph cluster_trusted { label="VLAN 10 Trusted"; color="#2E8B57"; style="rounded";
+    pc3090 [label="Bedroom1\nRTX 3090 工作站\n2.5G有线", fillcolor="#EAF6ED"];
+    pc2 [label="Bedroom2 台式机\n有线", fillcolor="#EAF6ED"];
+    phones [label="手机 / 笔记本", fillcolor="#EAF6ED"];
+  }
+  subgraph cluster_auto { label="VLAN 20 Automation"; color="#6F4EAA"; style="rounded";
+    mac [label="Mac mini\nHome Assistant", fillcolor="#EEE8FA"];
+    zigbee [label="PoE Zigbee 协调器", fillcolor="#EEE8FA"];
+    rs485 [label="隔离型 RS-485\n转 Ethernet 网关", fillcolor="#FFF2D8"];
+    esphome [label="ESPHome / CO₂ / 计量", fillcolor="#EEE8FA"];
+  }
+  subgraph cluster_iot { label="VLAN 30 IoT"; color="#D28E1E"; style="rounded";
+    projector [label="投影 / 电视 / 家电", fillcolor="#FFF2D8"];
+    p2s [label="Balcony1 P2S\nWi-Fi", fillcolor="#FFF2D8"];
+    robot [label="扫地机 / 洗衣机 / 冰箱", fillcolor="#FFF2D8"];
+  }
+  subgraph cluster_sec { label="VLAN 40 Security"; color="#C33A3A"; style="rounded";
+    doorcam [label="门口 PoE 摄像头\n或可视门铃（可选）", fillcolor="#FCE8E6"];
+  }
+  subgraph cluster_guest { label="VLAN 50 Guest"; color="#7C8793"; style="rounded";
+    guests [label="访客设备\n仅互联网", fillcolor="#F2F4F7"];
+  }
+
+  sw -> ap1; sw -> ap2; sw -> netdev;
+  sw -> pc3090; sw -> pc2;
+  ap1 -> phones [style=dashed, label="Home SSID"];
+  ap2 -> phones [style=dashed];
+  sw -> mac; sw -> zigbee; sw -> rs485; sw -> esphome;
+  ap2 -> projector [style=dashed, label="Home-IoT"];
+  ap2 -> p2s [style=dashed]; ap1 -> robot [style=dashed];
+  sw -> doorcam [label="PoE"];
+  ap1 -> guests [style=dashed, label="Guest"];
+  ap2 -> guests [style=dashed];
+}

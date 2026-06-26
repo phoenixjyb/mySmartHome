@@ -1,0 +1,25 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.35, ranksep=0.55, fontname="Noto Sans CJK SC", labelloc="t", label="日立空调 Modbus 连接与控制流程 V1", fontsize=24];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK SC", fontsize=12, color="#607080", margin="0.18,0.10"];
+  edge [fontname="Noto Sans CJK SC", fontsize=10, color="#657786", penwidth=1.3];
+
+  connect [label="连接 Modbus\n串口参数/从机地址来自安装手册", fillcolor="#DDEAF7", color="#2474B5", penwidth=2];
+  ready [label="读取 4998", fillcolor="#EEE8FA"];
+  wait [label="非1：等待并重试\n禁止控制", fillcolor="#FCE8E6", color="#C33A3A"];
+  count [label="=1：读取 4997\n确认室内机数量 1–160", fillcolor="#EAF6ED"];
+  discover [label="逐台读取\nB+16 机种\nB+26 系统号\nB+27 地址号", fillcolor="#E9F4F7"];
+  mapping [label="建立 Y→房间映射\n原厂线控器逐房测试", fillcolor="#FFF2D8"];
+  poll [label="正常轮询\nB+28…39", fillcolor="#EAF6ED"];
+  command [label="受保护控制\nB+78…83\n写后回读", fillcolor="#FFF2D8", color="#D28E1E", penwidth=2];
+  throttle [label="同一室内机写入间隔 ≥500ms\n暂不写 B+85/B+87", fillcolor="#FCE8E6"];
+  rescan [label="4999=1\n只在拓扑变化时人工触发\n最长约40分钟", fillcolor="#F2F4F7", style="rounded,dashed"];
+
+  connect -> ready;
+  ready -> wait [label="!=1"];
+  wait -> ready [label="重试"];
+  ready -> count [label="=1"];
+  count -> discover -> mapping -> poll;
+  poll -> command [label="用户/自动化请求"];
+  command -> throttle -> poll [label="状态确认"];
+  rescan -> ready [style=dashed];
+}

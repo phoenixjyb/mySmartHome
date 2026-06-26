@@ -1,0 +1,35 @@
+# macOS and editor noise
+.DS_Store
+._*
+*~
+.swp
+.swo
+
+# Local scratch and generated outputs
+tmp/
+temp/
+output/
+outputs/
+.cache/
+
+# Python/tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node/tooling caches for future implementation work
+node_modules/
+.pnpm-store/
+dist/
+build/
+
+# Home Assistant local/private files
+secrets.yaml
+config/home-assistant/**/secrets.yaml
+config/home-assistant/**/*.local.yaml
+config/home-assistant/**/*.local.yml
+
+# Site-specific generated configs should be reviewed before tracking.
+config/home-assistant/hitachi/hitachi_modbus_readonly.yaml

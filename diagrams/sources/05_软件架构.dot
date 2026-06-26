@@ -1,0 +1,41 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.35, ranksep=0.55, fontname="Noto Sans CJK SC", labelloc="t", label="软件与部署架构 V3.2", fontsize=24];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK SC", fontsize=12, color="#607080", margin="0.18,0.10"];
+  edge [fontname="Noto Sans CJK SC", fontsize=10, color="#657786", penwidth=1.3];
+
+  router [label="独立路由器 / 防火墙\n不与自动化服务器共机", fillcolor="#DDEAF7", color="#2474B5", penwidth=2];
+  mac [label="Mac mini / macOS\n24×7运行", fillcolor="#F2F4F7", color="#607080", penwidth=2];
+
+  subgraph cluster_haos { label="Home Assistant OS 虚拟机｜核心控制"; color="#2474B5"; style="rounded";
+    ha [label="Home Assistant Core", fillcolor="#DDEAF7"];
+    mqtt [label="Mosquitto MQTT", fillcolor="#EEE8FA"];
+    z2m [label="Zigbee2MQTT", fillcolor="#EEE8FA"];
+    esp [label="ESPHome", fillcolor="#EEE8FA"];
+    modbus [label="Modbus 集成
+日立只读发现/安全写入", fillcolor="#FFF2D8"];
+    recorder [label="Recorder / 自动备份", fillcolor="#F2F4F7"];
+    nodered [label="Node-RED（可选）", fillcolor="#F2F4F7"];
+  }
+
+  subgraph cluster_dev { label="独立 Linux VM / 容器｜后期开发"; color="#2E8B57"; style="rounded";
+    apps [label="Python / Go / Node.js\n自编服务", fillcolor="#EAF6ED"];
+    git [label="Git 配置与版本管理", fillcolor="#EAF6ED"];
+    data [label="InfluxDB / Grafana\n后期趋势分析", fillcolor="#EAF6ED"];
+  }
+
+  dell [label="Bedroom1 RTX 3090\n可选 AI / 视频 / 语音计算节点\n不承担核心控制", fillcolor="#FFF2D8", color="#D28E1E", penwidth=2];
+  devices [label="Zigbee / Modbus / Ethernet / Wi-Fi 设备", fillcolor="#F2F4F7"];
+  clients [label="手机 / 浏览器 / 自编客户端", fillcolor="#F2F4F7"];
+  backup [label="独立备份目标\n加密备份", fillcolor="#F2F4F7"];
+
+  router -> mac [label="LAN"];
+  mac -> ha; mac -> apps;
+  devices -> z2m; devices -> modbus; devices -> esp;
+  z2m -> mqtt -> ha; modbus -> ha; esp -> ha;
+  ha -> recorder; ha -> nodered;
+  apps -> ha [label="REST / WebSocket"];
+  apps -> mqtt [label="MQTT"];
+  ha -> clients; apps -> clients;
+  dell -> apps [label="按需调用"];
+  recorder -> backup; git -> backup;
+}

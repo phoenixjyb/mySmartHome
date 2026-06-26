@@ -1,0 +1,50 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.4, ranksep=0.65, fontname="Noto Sans CJK SC", labelloc="t", label="全屋硬件设备架构 V3.2", fontsize=24];
+  node [shape=box, style="rounded,filled", fontname="Noto Sans CJK SC", fontsize=12, color="#607080", margin="0.18,0.10"];
+  edge [fontname="Noto Sans CJK SC", fontsize=10, color="#657786", penwidth=1.3];
+
+  subgraph cluster_store { label="Storage room｜网络与自动化设备间"; color="#2474B5"; style="rounded";
+    rack [label="9U/12U 通风机柜", fillcolor="#DDEAF7"];
+    ont [label="光猫 / 路由器", fillcolor="#E8F2FC"];
+    sw [label="16口 PoE+ 交换机\n24口被动配线架", fillcolor="#E8F2FC"];
+    mac [label="Mac mini\nHome Assistant", fillcolor="#EEE8FA"];
+    gateway [label="2/4路隔离型\nRS-485转Ethernet", fillcolor="#FFF2D8"];
+    ups [label="1000–1500VA UPS\n仅带网络和服务器", fillcolor="#F2F4F7"];
+    rack -> ont; rack -> sw; rack -> mac; rack -> gateway; rack -> ups;
+  }
+
+  subgraph cluster_b1 { label="Bedroom1｜办公室"; color="#2E8B57"; style="rounded";
+    pc [label="RTX 3090 工作站", fillcolor="#EAF6ED"];
+    desk [label="2×Cat6A\n显示器 / 外设 / 电源", fillcolor="#EAF6ED"];
+    b1sens [label="温湿度 + CO₂ + 存在", fillcolor="#EAF6ED"];
+    b1light [label="Zigbee 灯光 / 窗帘", fillcolor="#EEE8FA"];
+  }
+
+  subgraph cluster_bal1 { label="Balcony1｜3D打印区"; color="#D28E1E"; style="rounded";
+    p2s [label="Bambu P2S\nWi-Fi", fillcolor="#FFF2D8"];
+    exhaust [label="短距离局部外排\n实体开关 + 可选智能继电器", fillcolor="#FFF2D8"];
+    balsens [label="温湿度 + 独立烟雾\n门磁 + 可选VOC/PM", fillcolor="#FFF2D8"];
+    balnet [label="1×Cat6A 备用", fillcolor="#F2F4F7"];
+  }
+
+  subgraph cluster_home { label="全屋现场设备"; color="#6F4EAA"; style="rounded";
+    aps [label="2×有线PoE AP\n+ 1个备用点位", fillcolor="#DDEAF7"];
+    zb [label="中央走廊 PoE\nZigbee 协调器", fillcolor="#EEE8FA"];
+    hvac [label="日立 Modbus 转换器\n格恩 Modbus RTU", fillcolor="#FFF2D8"];
+    lighting [label="Zigbee 实体灯光开关", fillcolor="#EEE8FA"];
+    curtains [label="Zigbee 窗帘电机\n保留墙面按键", fillcolor="#EEE8FA"];
+    av [label="投影 + 影音柜\nCat6 + HDMI空管", fillcolor="#E8F2FC"];
+    water [label="水浸 + 总水阀\n软水/净水监测", fillcolor="#E5F1FB"];
+  }
+
+  sw -> pc [label="2.5G"];
+  sw -> aps [label="PoE"];
+  sw -> zb [label="PoE"];
+  sw -> gateway;
+  gateway -> hvac [label="独立RS-485通道"];
+  aps -> p2s [style=dashed, label="Wi-Fi"];
+  zb -> b1sens [style=dashed, label="Zigbee"];
+  zb -> b1light [style=dashed];
+  zb -> lighting [style=dashed]; zb -> curtains [style=dashed]; zb -> water [style=dashed];
+  sw -> av [label="Ethernet"];
+}
