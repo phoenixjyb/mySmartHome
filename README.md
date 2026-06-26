@@ -7,6 +7,8 @@
 - `docs/current/全屋智能系统总体架构_V3.2.md`：当前总体架构主文档。
 - `docs/current/日立中央空调_Modbus接入与调试_V1.md`：日立点表分析、寄存器和调试流程。
 - `docs/current/日立室内机房间映射表.md`：现场建立 Y/系统号/地址号与房间映射。
+- `docs/current/开源平台选型与自研边界_V1.md`：明确采用 Home Assistant 等开源平台和本项目自研边界。
+- `docs/current/实施路线图与仓库结构_V1.md`：从设计、施工到软件实现的阶段计划和目录规划。
 - `docs/current/装修施工交底_网络与智能家居_V2.1.md`：施工基础稿；冲突时以 V3.2 为准。
 - `diagrams/06_暖通与加湿_RS485架构.svg`：暖通总线架构。
 - `diagrams/07_日立空调_Modbus控制流程.svg`：日立发现与控制状态机。
@@ -14,6 +16,7 @@
 - `scripts/generate_hitachi_ha_yaml.py`：按室内机数量生成只读 YAML。
 - `references/日立中央空调/`：日立 Modbus 点表原件。
 - `references/格恩通信协议列表格式-液晶控制器.xlsx`：格恩中央加湿协议原件。
+- `software/`、`inventory/`、`commissioning/`、`external/`：后续自研软件、设备清单、现场验收和外部依赖管理工作区。
 
 ## 当前暖通基线
 
@@ -53,4 +56,6 @@ bash scripts/copy_to_projects.sh
 - `docs/current/`：当前采用版本。
 - `docs/archive/`：历史草案，仅供追溯。
 - `config/`：尚需按实际 IP、从机地址和现场映射调整的部署模板。
+- `software/`：自研代码和调试工具，当前先以规划和 README 占位。
+- `external/`：只在确需固定外部源码时使用；当前不把 Home Assistant、Zigbee2MQTT、ESPHome 等作为 submodule。
 - 任何写控制启用前，必须完成只读验证和原厂线控器对照测试。

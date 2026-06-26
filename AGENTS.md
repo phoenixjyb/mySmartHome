@@ -29,6 +29,8 @@ Use these files first:
 - `docs/current/装修施工交底_网络与智能家居_V2.1.md` as the construction handoff baseline. If it conflicts with V3.2 architecture, V3.2 wins.
 - `docs/current/日立中央空调_Modbus接入与调试_V1.md` for Hitachi Modbus commissioning.
 - `docs/current/日立室内机房间映射表.md` for site mapping during HVAC commissioning.
+- `docs/current/开源平台选型与自研边界_V1.md` for open-source platform adoption versus self-built boundaries.
+- `docs/current/实施路线图与仓库结构_V1.md` for phases, repo structure, and submodule policy.
 - `config/home-assistant/hitachi/` for read-only Home Assistant examples.
 - `diagrams/架构图索引.md` and `diagrams/sources/*.dot` for diagram maintenance.
 
@@ -139,6 +141,7 @@ shasum -a 256 -c MANIFEST_SHA256.txt
 - When adding or changing diagrams, edit `diagrams/sources/*.dot` first and regenerate SVG/PNG outputs consistently.
 - When adding Home Assistant examples, default to read-only and clearly label any placeholders.
 - Do not add live write controls, destructive maintenance actions, or public remote-access patterns without explicit confirmation.
+- Do not add external projects as submodules by default. Use `external/README.md` and `docs/current/开源平台选型与自研边界_V1.md` before deciding a submodule is warranted.
 
 ## Git And Repository Conventions
 

@@ -8,6 +8,8 @@ smartHouse/
 │   ├── 全屋智能系统总体架构_V3.2.md
 │   ├── 日立中央空调_Modbus接入与调试_V1.md
 │   ├── 日立室内机房间映射表.md
+│   ├── 开源平台选型与自研边界_V1.md
+│   ├── 实施路线图与仓库结构_V1.md
 │   └── 装修施工交底_网络与智能家居_V2.1.md
 ├── config/home-assistant/hitachi/
 │   ├── README.md
@@ -16,6 +18,12 @@ smartHouse/
 ├── diagrams/
 │   ├── 01…07 PNG/SVG
 │   └── sources/*.dot
+├── software/
+│   ├── smarthouse-core/README.md
+│   └── modbus-tools/README.md
+├── inventory/README.md
+├── commissioning/README.md
+├── external/README.md
 ├── references/
 │   ├── 日立中央空调/*.pdf
 │   └── 格恩通信协议列表格式-液晶控制器.xlsx
