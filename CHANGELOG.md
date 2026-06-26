@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Contractor handoff and hardware decision matrix - 2026-06-26
+
+- 新增 `docs/current/装修队施工交底清单_V1.md`，面向装修队列出储物间、网络点位、RS-485、灯光窗帘、Balcony1、入户门和封墙前检查。
+- 新增 `inventory/contractor_wiring_checklist.csv`，把施工点位转为可筛选的 CSV 清单。
+- 新增 `inventory/hardware_decision_matrix.md`，记录主控、网络生态、交换机、AP、Zigbee、RS-485 和 UPS 的候选与决策边界。
+
 ## Architecture audit and initial inventory - 2026-06-26
 
 - 新增 `docs/current/架构审计与首期硬件清单_V1.md`，审计控制主机、交换机端口、AP、Zigbee、RS-485 和装修队交付边界。

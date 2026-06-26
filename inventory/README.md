@@ -15,6 +15,8 @@ Do not store passwords, API keys, tokens, or private account recovery data here.
 Current files:
 
 - `purchase_candidates.md`: initial hardware candidate list and purchase priority.
+- `hardware_decision_matrix.md`: tradeoff matrix for controller, network ecosystem, switch, AP, Zigbee, RS-485, and UPS choices.
+- `contractor_wiring_checklist.csv`: contractor-facing wiring and installation checklist.
 - `network_ports.csv`: construction-stage low-voltage port schedule.
 - `ip_plan.md`: first VLAN/IP/static DHCP plan.
 - `rs485_channels.md`: RS-485 channel split and commissioning rules.

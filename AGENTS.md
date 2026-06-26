@@ -32,6 +32,7 @@ Use these files first:
 - `docs/current/开源平台选型与自研边界_V1.md` for open-source platform adoption versus self-built boundaries.
 - `docs/current/实施路线图与仓库结构_V1.md` for phases, repo structure, and submodule policy.
 - `docs/current/架构审计与首期硬件清单_V1.md` for current architecture audit and initial hardware choices.
+- `docs/current/装修队施工交底清单_V1.md` for contractor-facing wiring, conduit, photo, and acceptance requirements.
 - `inventory/` for initial hardware purchase candidates, network ports, VLAN/IP plan, RS-485 channels, and device inventory.
 - `config/home-assistant/hitachi/` for read-only Home Assistant examples.
 - `diagrams/架构图索引.md` and `diagrams/sources/*.dot` for diagram maintenance.

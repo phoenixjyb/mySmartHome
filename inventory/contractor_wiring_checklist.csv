@@ -1,0 +1,36 @@
+id,area,item,type,quantity,cable_or_pipe,from,to,responsible,acceptance,status
+RACK-SPACE,Storage room,9U/12U通风机柜安装位,cabinet,1,wall mount space,storage room wall,storage room,装修队,位置/门开启/检修空间确认,planned
+RACK-POWER,Storage room,机柜独立带地电源,power,1,220V grounded circuit,distribution panel,storage room rack,电工,接地/插座数量/位置确认,planned
+RACK-VENT,Storage room,机柜通风或静音排风,ventilation,1,vent path,storage room,storage room,装修队,不完全密闭/通风路径确认,planned
+PATCH-24,Storage room,24口配线架安装位,network,1,patch panel,all network drops,storage room rack,弱电施工,配线架编号清晰,planned
+AP1,Hallway left,吸顶AP1网线,network,1,Cat6 or Cat6A,storage room patch panel,left hallway ceiling,弱电施工,PoE网线测试/编号/照片,planned
+AP2,Living room,吸顶AP2网线,network,1,Cat6 or Cat6A,storage room patch panel,living room ceiling,弱电施工,PoE网线测试/编号/照片,planned
+AP-R,Bedroom3 hallway,AP3备用空管或网线,reserve,0-1,empty conduit or Cat6,storage room patch panel,Bedroom3 hallway ceiling,弱电施工,空管通畅或网线测试/照片,optional
+ZIGBEE-POE,Central hallway,PoE Zigbee协调器网线,network,1,Cat6,storage room patch panel,central hallway open location,弱电施工,不得进金属机柜/PoE网线测试/照片,planned
+B1-DATA-1,Bedroom1,办公桌网口1,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
+B1-DATA-2,Bedroom1,办公桌网口2,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
+B2-DATA-1,Bedroom2,书桌网口1,network,1,Cat6A,storage room patch panel,Bedroom2 desk,弱电施工,网线测试/墙面编号,planned
+B2-DATA-2,Bedroom2,书桌网口2,network,1,Cat6A,storage room patch panel,Bedroom2 desk,弱电施工,网线测试/墙面编号,planned
+BAL1-DATA,Balcony1,P2S区备用网口,network,1,Cat6A,storage room patch panel,Balcony1 indoor side,弱电施工,可检修/网线测试/照片,planned
+BAL2-DATA,Balcony2,备用网口,network,1,Cat6,storage room patch panel,Balcony2,弱电施工,潮湿位置面板/网线测试,planned
+PJ-DATA,Living room,投影备用网口,network,1,Cat6,storage room patch panel,projector location,弱电施工,网线测试/与投影电源同点位复核,planned
+PJ-POWER,Living room,投影电源,power,1,220V,distribution panel,projector location,电工,位置与投影/幕布确认,planned
+PJ-CONDUIT,Living room,影音穿线管,conduit,1,large low-voltage conduit,projector location,AV cabinet,装修队,不得与220V共管/通畅,planned
+AV-DATA-1,Living room,影音柜网口1,network,1,Cat6,storage room patch panel,AV cabinet,弱电施工,网线测试/编号,planned
+AV-DATA-2,Living room,影音柜网口2,network,0-1,Cat6,storage room patch panel,AV cabinet,弱电施工,如施工方便保留第二根,optional
+MAC-HOST,Storage room,主控主机网线,network,1,Cat6A,storage room patch panel,storage room rack,弱电施工,网线测试/编号,planned
+RS485-GW-NET,Storage room,RS-485网关以太网,network,1,Cat6,storage room patch panel,RS-485 gateway,弱电施工,网线测试/固定位置,planned
+HVAC-GW,HVAC,日立RS-485独立通道,rs485,1,manufacturer shielded RS-485 + conduit,Hitachi converter serviceable location,storage room RS-485 gateway Port 1,暖通/弱电施工,A/B/GND/屏蔽/线型/照片/不得与格恩共管共线,planned
+HUM-GW,Humidifier,格恩RS-485独立通道,rs485,1,manufacturer shielded RS-485 + conduit,Gen controller,storage room RS-485 gateway Port 2,加湿/弱电施工,A/B/GND/屏蔽/线型/照片/不得与日立共线,planned
+ENTRY-H,Entry,入户门上方高位网线,network,1,Cat6,storage room patch panel,entry high position,弱电施工,物业/隐私确认后安装设备,planned
+ENTRY-L,Entry,入户门旁低位线/空管,network,1,Cat6 or conduit,storage room patch panel,entry low position,弱电施工,门铃候选/编号/照片,planned
+CURTAIN-LR,Living room,客厅窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,living room curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
+CURTAIN-B1,Bedroom1,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom1 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
+CURTAIN-B2,Bedroom2,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom2 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
+CURTAIN-B3,Bedroom3,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom3 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
+LIGHT-SWITCHES,Whole house,智能开关基础条件,power,TBD,L/N/load/ground,distribution panel,86 boxes,电工,零线/加深底盒/不同漏保零线不混用,planned
+BAL1-EXHAUST,Balcony1,P2S短距离外排,ventilation,1,100mm exhaust path,Balcony1 P2S area,outdoor window panel,装修队,物业许可/止回/防虫/可检修,planned
+BAL1-POWER,Balcony1,P2S和排风电源,power,2,220V grounded outlets,distribution panel,Balcony1 P2S area,电工,打印机/排风分开插座/接地,planned
+WATER-LEAK-POINTS,Water areas,水浸传感器点位,sensor,TBD,placement reserve,water equipment areas,near floor/service points,装修队,位置可放传感器/可检修,planned
+PHOTO-RECORD,Whole house,隐蔽工程照片,evidence,all,photo record,all hidden routes,project archive,装修队/业主,封墙吊顶前完成,planned
+TEST-REPORT,Whole house,网线测试报告,evidence,all,cable tester,all network drops,project archive,弱电施工,通断/线序/编号/结果移交,planned

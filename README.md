@@ -10,6 +10,7 @@
 - `docs/current/开源平台选型与自研边界_V1.md`：明确采用 Home Assistant 等开源平台和本项目自研边界。
 - `docs/current/实施路线图与仓库结构_V1.md`：从设计、施工到软件实现的阶段计划和目录规划。
 - `docs/current/架构审计与首期硬件清单_V1.md`：审计当前方案并给出装修前硬件/布线优先级。
+- `docs/current/装修队施工交底清单_V1.md`：面向装修队的布线、点位、隐蔽工程和验收交付清单。
 - `docs/current/装修施工交底_网络与智能家居_V2.1.md`：施工基础稿；冲突时以 V3.2 为准。
 - `diagrams/06_暖通与加湿_RS485架构.svg`：暖通总线架构。
 - `diagrams/07_日立空调_Modbus控制流程.svg`：日立发现与控制状态机。
@@ -18,7 +19,7 @@
 - `references/日立中央空调/`：日立 Modbus 点表原件。
 - `references/格恩通信协议列表格式-液晶控制器.xlsx`：格恩中央加湿协议原件。
 - `software/`、`inventory/`、`commissioning/`、`external/`：后续自研软件、设备清单、现场验收和外部依赖管理工作区。
-- `inventory/`：首期采购候选、网络端口、IP/VLAN、RS-485 通道和设备清单。
+- `inventory/`：首期采购候选、硬件决策矩阵、装修队布线清单、网络端口、IP/VLAN、RS-485 通道和设备清单。
 
 ## 当前暖通基线
 
