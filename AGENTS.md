@@ -35,6 +35,7 @@ Use these files first:
 - `docs/current/装修队施工交底清单_V1.md` for contractor-facing wiring, conduit, photo, and acceptance requirements.
 - `docs/current/设计师发送前点位复核_V1.md` for pre-send ambiguity checks and points that must be drawn into designer/contractor plans.
 - `docs/current/用电功率与插座点位复核_V1.md` for power-load, socket-position, UPS-boundary, and smart-plug control-boundary checks.
+- `docs/current/RS485线路拓扑与米数估算_V1.md` for RS-485 topology, separate conduit routing, and cable-length estimates.
 - `inventory/` for initial hardware purchase candidates, network ports, VLAN/IP plan, RS-485 channels, and device inventory.
 - `config/home-assistant/hitachi/` for read-only Home Assistant examples.
 - `diagrams/架构图索引.md` and `diagrams/sources/*.dot` for diagram maintenance.

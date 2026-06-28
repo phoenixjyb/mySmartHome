@@ -14,6 +14,7 @@ smartHouse/
 │   ├── 装修队施工交底清单_V1.md
 │   ├── 设计师发送前点位复核_V1.md
 │   ├── 用电功率与插座点位复核_V1.md
+│   ├── RS485线路拓扑与米数估算_V1.md
 │   └── 装修施工交底_网络与智能家居_V2.1.md
 ├── config/home-assistant/hitachi/
 │   ├── README.md
@@ -34,6 +35,7 @@ smartHouse/
 │   ├── network_ports.csv
 │   ├── ip_plan.md
 │   ├── rs485_channels.md
+│   ├── rs485_cable_runs.csv
 │   └── devices.csv
 ├── commissioning/README.md
 ├── external/README.md

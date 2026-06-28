@@ -26,6 +26,22 @@ Required features:
 | 3 | Future meter/water meter | TBD | TBD | TBD | reserve conduit/channel | none | reserve |
 | 4 | Future Daikin/other equipment | TBD | TBD | TBD | reserve conduit/channel | none | reserve |
 
+## Cable-length planning
+
+See `docs/current/RS485线路拓扑与米数估算_V1.md` and `inventory/rs485_cable_runs.csv`.
+
+Current reserve guidance:
+
+- Port 1 Hitachi near storage room: reserve 5 m if vendor allows converter near the rack.
+- Port 1 Hitachi central ceiling/service hatch: reserve 12 m as baseline.
+- Port 1 Hitachi far-right equipment zone: reserve 18 m as contingency.
+- Port 2 Gen central humidifier near storage/kitchen/bathroom service zone: reserve 12 m as baseline.
+- Port 2 Gen far-right equipment zone: reserve 18 m as contingency.
+- Port 3 future water/meter reserve: reserve 12 m conduit/pull string.
+- Port 4 future equipment reserve: reserve 18-20 m conduit/pull string.
+
+These are design-stage estimates from the current floor plan. Final lengths must be checked from formal construction drawings and as-built routing before wall/ceiling closure.
+
 ## Rules
 
 - Do not share Hitachi and humidifier on one bus.

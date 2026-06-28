@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## RS-485 topology and cable-length estimate - 2026-06-28
+
+- 新增 `docs/current/RS485线路拓扑与米数估算_V1.md`，明确 RS-485 在家中网络拓扑、日立/格恩独立通道、施工管路和当前户型图下的米数估算。
+- 新增 `inventory/rs485_cable_runs.csv`，将 Port 1/2/3/4 的候选路径、估算长度和建议预留长度结构化。
+- 更新 `inventory/rs485_channels.md` 和施工交底，强调米数为设计阶段估算，最终以厂家设备位置和正式施工图路径复核为准。
+
 ## Power and socket point audit - 2026-06-28
 
 - 新增 `docs/current/用电功率与插座点位复核_V1.md`，把设备功率、插座点位、回路边界、UPS 边界和智能控制禁区纳入设计定稿复核。
