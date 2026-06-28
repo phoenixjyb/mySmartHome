@@ -17,4 +17,4 @@ CO2-01,environment,Living room,ESPHome/LAN or local device,P2,1,planned,CO2 moni
 CO2-02,environment,Bedroom1,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for office
 SMOKE-01,safety,Hall/living room,standalone,P2,1,planned,independent alarm
 SMOKE-02,safety,Storage room / 新图衣帽间,standalone,P2,1,planned,independent alarm; optional dry contact
-SMOKE-03,safety,P2S candidate area,standalone,P2,1,planned,independent alarm for P2S area
+SMOKE-03,safety,Storage room / 新图衣帽间 P2S area,standalone,P2,1,planned,independent alarm for P2S area

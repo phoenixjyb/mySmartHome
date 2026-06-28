@@ -11,7 +11,7 @@ B1-DATA-1,Bedroom1,办公桌网口1,network,1,Cat6A,storage room patch panel,Bed
 B1-DATA-2,Bedroom1,办公桌网口2,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
 B2-DATA-1,Bedroom2,书桌网口1,network,1,Cat6A,storage room patch panel,Bedroom2 desk,弱电施工,网线测试/墙面编号,planned
 B2-DATA-2,Bedroom2,书桌网口2,network,1,Cat6A,storage room patch panel,Bedroom2 desk,弱电施工,网线测试/墙面编号,planned
-BAL1-DATA,P2S candidate balcony,P2S候选区备用网口,network,1,Cat6A,storage room patch panel,P2S candidate indoor side,弱电施工,可检修/网线测试/照片；不默认放衣帽间,planned
+P2S-DATA,Storage room / 新图衣帽间,P2S位备用网口,network,0-1,Cat6A optional,storage room patch panel,P2S shelf/bay,弱电施工,P2S可用Wi-Fi；如穿网线则测试/编号/照片,planned
 BAL2-DATA,Balcony2,备用网口,network,1,Cat6,storage room patch panel,Balcony2,弱电施工,备用/网线测试；洗衣机已固定在次卫,planned
 PJ-DATA,Living room,投影备用网口,network,1,Cat6,storage room patch panel,projector location coordinated with screen,弱电施工,网线测试/与新版平面图幕布位置和投影电源同点位复核,planned
 PJ-POWER,Living room,投影电源,power,1,220V,distribution panel,projector location coordinated with screen,电工,位置与新版平面图幕布确认,planned
@@ -29,8 +29,8 @@ CURTAIN-B1,Bedroom1,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distr
 CURTAIN-B2,Bedroom2,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom2 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
 CURTAIN-B3,Bedroom3,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom3 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
 LIGHT-SWITCHES,Whole house,智能开关基础条件,power,TBD,L/N/load/ground,distribution panel,86 boxes,电工,零线/加深底盒/不同漏保零线不混用,planned
-P2S-EXHAUST,P2S candidate area,P2S短距离外排,ventilation,1,100mm exhaust path,P2S candidate area,outdoor window panel or independent exhaust path,装修队,物业许可/止回/防虫/可检修；若放衣帽间必须独立外排,planned
-P2S-POWER,P2S candidate area,P2S和排风电源,power,2,220V grounded outlets,distribution panel,P2S candidate area,电工,打印机/排风分开插座/接地；不得共用机柜PDU或UPS,planned
+P2S-VENT,Storage room / 新图衣帽间,P2S可选通风/外排预留,ventilation,1,ventilation or 100mm exhaust reserve,P2S shelf/bay,outdoor path or serviceable vent path,装修队,PLA/PETG不强制外排；预留路径/止回/防虫/可检修,planned
+P2S-POWER,Storage room / 新图衣帽间,P2S和可选通风电源,power,2,220V grounded outlets,distribution panel,P2S shelf/bay,电工,打印机/可选通风分开插座/接地；不得共用机柜PDU或UPS,planned
 WATER-LEAK-POINTS,Water areas,水浸传感器点位,sensor,TBD,placement reserve,water equipment areas,near floor/service points,装修队,位置可放传感器/可检修,planned
 PHOTO-RECORD,Whole house,隐蔽工程照片,evidence,all,photo record,all hidden routes,project archive,装修队/业主,封墙吊顶前完成,planned
 TEST-REPORT,Whole house,网线测试报告,evidence,all,cable tester,all network drops,project archive,弱电施工,通断/线序/编号/结果移交,planned

@@ -6,7 +6,7 @@ B1-DATA-1,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,yes,RTX 3090工作
 B1-DATA-2,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,no,扩展坞/NAS/备用,planned
 B2-DATA-1,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,yes,未来台式机,planned
 B2-DATA-2,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,no,备用,planned
-BAL1-DATA,P2S候选阳台区,1,Cat6A,24口配线架,30 IoT,no,P2S本体使用Wi-Fi；网口备用；不默认放衣帽间,planned
+P2S-DATA,储物间/新图衣帽间P2S位,1,Cat6A optional,24口配线架,30 IoT,no,P2S本体可用Wi-Fi；如台面附近方便则保留备用网口,planned
 BAL2-DATA,Balcony2,1,Cat6,24口配线架,30 IoT,no,备用；洗衣机已固定在次卫,planned
 PJ-DATA,客厅投影位置/幕布协调点,1,Cat6,24口配线架,30 IoT,no,按新版平面图幕布位置协调；投影可Wi-Fi；网线备用,planned
 AV-DATA-1,客厅影音柜,1,Cat6,24口配线架,30 IoT,yes,播放器/功放/小交换机,planned

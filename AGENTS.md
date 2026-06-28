@@ -50,9 +50,9 @@ Treat `docs/archive/` as historical only. Do not revive archived decisions unles
 - `Storage room` maps to the `衣帽间` area on `references/newFloorPlan.png`. It is the network and automation equipment room: rack/cabinet, ONT, router/firewall, managed PoE switch, patch panel, Mac mini, UPS, Zigbee coordinator network path, and RS-485 gateways.
 - `次卫生间` is the confirmed washing-machine area; update water-leak, socket, drain, and wet-area electrical checks around this room rather than assuming washing on a balcony.
 - The living-room projector should be coordinated with the screen/幕布 position shown on `references/newFloorPlan.png`.
-- `Balcony1` remains the preferred Bambu P2S printing-area baseline unless the user explicitly changes it after risk review; use Wi-Fi for the printer, keep one spare Cat6A, preserve the living-room balcony door, and plan short local exhaust plus independent safety monitoring.
+- Bambu P2S is now confirmed in the storage room/衣帽间. Treat it as a normal enclosed FDM printer with internal filtering, not as a resin printer or industrial machine. For PLA/PETG, external exhaust is not mandatory, but reserve ventilation/exhaust options for ABS/ASA/PC or odor/heat control.
 - `Balcony2` keeps one spare network port only as a reserve unless a future water device is installed there.
-- Do not put the P2S in the storage room/衣帽间 by default. That room contains network, UPS, clothes/cabinetry, and possibly refrigerator-adjacent equipment; a 3D printer there would add heat, particulate/VOC emission, fire load, noise, and maintenance conflict unless there is a dedicated non-clothing bay, direct independent exhaust, fire detection, power isolation, and clear service space.
+- In the storage room/衣帽间, keep the P2S on its own shelf/bay with clear access for the door, AMS, filament changes, poop chute, maintenance, and cleaning. Do not share the rack UPS/PDU; keep it physically separated from network rack, UPS, clothes, paper boxes, and solvents/glue. Add smoke alarm and temperature monitoring; optional VOC/PM monitoring is useful but not a construction blocker.
 - Use two wired ceiling APs initially. A third AP is only a conduit/reserve option.
 - Use a 16-port managed PoE+ switch with a 24-port passive patch panel for expansion.
 - Use a PoE/Ethernet Zigbee coordinator in an open central hallway location, not inside a metal rack.
@@ -169,7 +169,7 @@ shasum -a 256 -c MANIFEST_SHA256.txt
 - Curtain protocol choice: Zigbee/Thread versus RS-485/Modbus.
 - Lighting circuit split, neutral wire and deep box availability, dimming needs, and multi-way control locations.
 - Final positions for desks, projector, screen, AV cabinet, door video device, washing machine, water treatment equipment, and water shutoff valve.
-- Balcony1 P2S exhaust path, property-management approval, outlet/smoke/VOC monitoring, and heat/noise validation.
+- Storage room P2S shelf/bay position, independent outlet, clearance, optional exhaust/vent path, smoke/temperature monitoring, and heat/noise validation.
 - Final as-built line numbering, photos before sealing walls/ceilings, and acceptance records.
 
 ## Operating Principle
