@@ -12,6 +12,7 @@ smartHouse/
 │   ├── 实施路线图与仓库结构_V1.md
 │   ├── 架构审计与首期硬件清单_V1.md
 │   ├── 装修队施工交底清单_V1.md
+│   ├── 设计师发送前点位复核_V1.md
 │   └── 装修施工交底_网络与智能家居_V2.1.md
 ├── config/home-assistant/hitachi/
 │   ├── README.md

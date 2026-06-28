@@ -5,7 +5,7 @@ RACK-VENT,Storage room,机柜通风或静音排风,ventilation,1,vent path,stora
 PATCH-24,Storage room,24口配线架安装位,network,1,patch panel,all network drops,storage room rack,弱电施工,配线架编号清晰,planned
 AP1,Hallway left,吸顶AP1网线,network,1,Cat6 or Cat6A,storage room patch panel,left hallway ceiling,弱电施工,PoE网线测试/编号/照片,planned
 AP2,Living room,吸顶AP2网线,network,1,Cat6 or Cat6A,storage room patch panel,living room ceiling,弱电施工,PoE网线测试/编号/照片,planned
-AP-R,Bedroom3 hallway,AP3备用空管或网线,reserve,0-1,empty conduit or Cat6,storage room patch panel,Bedroom3 hallway ceiling,弱电施工,空管通畅或网线测试/照片,optional
+AP-R,Bedroom3 hallway,AP3备用空管或网线,reserve,1,empty conduit with pull string; Cat6/Cat6A if feasible,storage room patch panel,Bedroom3 hallway ceiling,弱电施工,至少空管和拉线；如穿网线则测试/编号/照片,planned
 ZIGBEE-POE,Central hallway,PoE Zigbee协调器网线,network,1,Cat6,storage room patch panel,central hallway open location,弱电施工,不得进金属机柜/PoE网线测试/照片,planned
 B1-DATA-1,Bedroom1,办公桌网口1,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
 B1-DATA-2,Bedroom1,办公桌网口2,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
@@ -17,13 +17,13 @@ PJ-DATA,Living room,投影备用网口,network,1,Cat6,storage room patch panel,p
 PJ-POWER,Living room,投影电源,power,1,220V,distribution panel,projector location,电工,位置与投影/幕布确认,planned
 PJ-CONDUIT,Living room,影音穿线管,conduit,1,large low-voltage conduit,projector location,AV cabinet,装修队,不得与220V共管/通畅,planned
 AV-DATA-1,Living room,影音柜网口1,network,1,Cat6,storage room patch panel,AV cabinet,弱电施工,网线测试/编号,planned
-AV-DATA-2,Living room,影音柜网口2,network,0-1,Cat6,storage room patch panel,AV cabinet,弱电施工,如施工方便保留第二根,optional
+AV-DATA-2,Living room,影音柜网口2,network,1,Cat6 or empty conduit if constrained,storage room patch panel,AV cabinet,弱电施工,默认第二根Cat6；无法穿线时至少保留空管,planned
 MAC-HOST,Storage room,主控主机网线,network,1,Cat6A,storage room patch panel,storage room rack,弱电施工,网线测试/编号,planned
 RS485-GW-NET,Storage room,RS-485网关以太网,network,1,Cat6,storage room patch panel,RS-485 gateway,弱电施工,网线测试/固定位置,planned
-HVAC-GW,HVAC,日立RS-485独立通道,rs485,1,manufacturer shielded RS-485 + conduit,Hitachi converter serviceable location,storage room RS-485 gateway Port 1,暖通/弱电施工,A/B/GND/屏蔽/线型/照片/不得与格恩共管共线,planned
-HUM-GW,Humidifier,格恩RS-485独立通道,rs485,1,manufacturer shielded RS-485 + conduit,Gen controller,storage room RS-485 gateway Port 2,加湿/弱电施工,A/B/GND/屏蔽/线型/照片/不得与日立共线,planned
+HVAC-GW,HVAC,日立RS-485独立通道,rs485,1,dedicated conduit with pull string; manufacturer shielded RS-485 after confirmed,Hitachi converter serviceable location,storage room RS-485 gateway Port 1,暖通/弱电施工,A/B/GND/屏蔽/线型/照片/不得与格恩共管共线；线型未确认前先做独立管路,planned
+HUM-GW,Humidifier,格恩RS-485独立通道,rs485,1,dedicated conduit with pull string; manufacturer shielded RS-485 after confirmed,Gen controller,storage room RS-485 gateway Port 2,加湿/弱电施工,A/B/GND/屏蔽/线型/照片/不得与日立共线；线型未确认前先做独立管路,planned
 ENTRY-H,Entry,入户门上方高位网线,network,1,Cat6,storage room patch panel,entry high position,弱电施工,物业/隐私确认后安装设备,planned
-ENTRY-L,Entry,入户门旁低位线/空管,network,1,Cat6 or conduit,storage room patch panel,entry low position,弱电施工,门铃候选/编号/照片,planned
+ENTRY-L,Entry,入户门旁低位线/空管,network,1,Cat6 preferred; at least conduit with pull string,storage room patch panel,entry low position,弱电施工,门铃候选；不穿网线也必须留可穿线空管/编号/照片,planned
 CURTAIN-LR,Living room,客厅窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,living room curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
 CURTAIN-B1,Bedroom1,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom1 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned
 CURTAIN-B2,Bedroom2,窗帘电源和弱电空管,curtain,TBD,220V + conduit,distribution panel,Bedroom2 curtain box,电工/装修队,常电/接地/检修口/弱电空管,planned

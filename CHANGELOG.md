@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Designer pre-send position audit - 2026-06-28
+
+- 新增 `docs/current/设计师发送前点位复核_V1.md`，列出发给设计师前必须落图和仍需业主确认的点位。
+- 明确 Zigbee 协调器点位：对外无线连 Zigbee 设备，对内通过 PoE/Ethernet 有线回交换机。
+- 将 AP-R 从可选改为至少预留空管和拉线；将客厅影音柜第二根线改为默认预留；将入户低位改为至少空管和拉线。
+- 明确日立/格恩 RS-485 在厂家线型未确认前，先做独立弱电管和拉线，确认线型后再穿厂家指定屏蔽线。
+
 ## Contractor handoff and hardware decision matrix - 2026-06-26
 
 - 新增 `docs/current/装修队施工交底清单_V1.md`，面向装修队列出储物间、网络点位、RS-485、灯光窗帘、Balcony1、入户门和封墙前检查。
