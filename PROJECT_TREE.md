@@ -15,6 +15,7 @@ smartHouse/
 │   ├── 设计师发送前点位复核_V1.md
 │   ├── 用电功率与插座点位复核_V1.md
 │   ├── RS485线路拓扑与米数估算_V1.md
+│   ├── 新平面图初读与智能点位影响_V1.md
 │   └── 装修施工交底_网络与智能家居_V2.1.md
 ├── config/home-assistant/hitachi/
 │   ├── README.md
@@ -40,6 +41,7 @@ smartHouse/
 ├── commissioning/README.md
 ├── external/README.md
 ├── references/
+│   ├── newFloorPlan.png
 │   ├── 日立中央空调/*.pdf
 │   └── 格恩通信协议列表格式-液晶控制器.xlsx
 └── scripts/

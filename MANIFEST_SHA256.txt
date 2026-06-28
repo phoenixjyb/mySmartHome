@@ -1,8 +1,8 @@
 2de5c6899062e18e847d4d7044c7e4cb6c9881fdd367782bba8f9238b27c21c8  ./.gitignore
 ede15c3efbff7665952a9162e64622873c3eaabfeee99066c52226a9a87e768a  ./AGENTS.md
-ac0411260b6390ddff1426d3e1f96abeee552720e6a8253cf2f271f6fb05c979  ./CHANGELOG.md
-3f44fce46f007a4a280bf312857f359a0ef619207e67a1155d8423802ad23bfc  ./PROJECT_TREE.md
-cf86f38144a45d3469c0a6bb3df0ca32fc58d2451dacf626bddadab8dbe2dade  ./README.md
+22e4fb074e911557d1ad581f2e44efe33889c852e60d47c8b7925f2f87987b12  ./CHANGELOG.md
+2fb9be7ff2a8100c72b4dd23a47f523191fd5e9035a674a391870b3bf80fb96b  ./PROJECT_TREE.md
+c876415fd25233056f507e66254d71c72612158688c0ff8b7304b035fac6cfe9  ./README.md
 9f55d38a2f8a32b277f27c34afdc365b48dbcc9fb1c89899c04fc0901bd05bbc  ./commissioning/README.md
 4fa6b601ff2e77c89864bb3ef5b1d61124a17ea6f9875983a6ff8676ef99ee4d  ./config/home-assistant/hitachi/README.md
 bd2a1613fecad67ffde751ba6096f750361a4a8086d5ea521a3c3acd1f566f2e  ./config/home-assistant/hitachi/hitachi_modbus_readonly.yaml.example
@@ -44,6 +44,7 @@ d0891557ee828436622a1e6b301e02d1afd1f80e61a13f10935de88fc93d32d8  ./docs/archive
 080628b9a0be81f235b030a1b4ba2de8e57b0b58014d245ab2c807e26ea79758  ./docs/current/全屋智能系统总体架构_V3.2.md
 6fbc8dfcd731a870362cef8190d9677693704eddbfb5e046b1b82ca16e8c2de9  ./docs/current/实施路线图与仓库结构_V1.md
 08c23c04c703346d93a110137dbf00df2db3e0ad6852e23cd4e3ce682cbef275  ./docs/current/开源平台选型与自研边界_V1.md
+dbd521480731ace268421f860c29d76c953e9bf0df31f5b8a4d28d22061faed8  ./docs/current/新平面图初读与智能点位影响_V1.md
 de39b0cf46294c5a7ad2d44a45d2def21f3ecf2f473aa9d594b30d05a69b264e  ./docs/current/日立中央空调_Modbus接入与调试_V1.md
 4704111ee9c3aa603087678624e9c1e7d1ec015460a044fa680c5aba0a410a27  ./docs/current/日立室内机房间映射表.md
 e05f138a9cdba2acfadf360bf099d15b7470e480b3498fc56a9919fecc46ff06  ./docs/current/架构审计与首期硬件清单_V1.md
@@ -64,6 +65,7 @@ dbf214392ab1e02d10f7ff283250a0e83ca7b90ffde41e739fc83c0bdbb21298  ./inventory/pu
 ecca08fac2b4cc1e0892fb672f3bed08dcf65f2b50d1acaee8f87c9e1f3f7243  ./inventory/rs485_cable_runs.csv
 976022b04103ce832d5d1e6b40e158ef1cf45e41e80eedc52caaa51c43a1229d  ./inventory/rs485_channels.md
 fc8f668d84ec14b4cceb15ddd626baf828da957ada44d32d4000a9b4464567fe  ./references/Modbus & MiniModbus 协议转换器专用点表(多联机系统用)4.17.pdf
+aab336f0a33473bd797291c07bc02a8ed0cb82d96467438e3a4e3273fb5dd915  ./references/newFloorPlan.png
 cbb643b5753672a2920a018b684fab9795e60a7b2e302d943f20b3ca594368e5  ./references/原始户型图.png
 fc8f668d84ec14b4cceb15ddd626baf828da957ada44d32d4000a9b4464567fe  ./references/日立中央空调/Modbus_MiniModbus_协议转换器专用点表_多联机_4.17.pdf
 750d04abe94f15107cfd4ee47e4df54b10f10c323ba74b7f446bc3cf189a91c6  ./references/格恩通信协议列表格式-液晶控制器.xlsx

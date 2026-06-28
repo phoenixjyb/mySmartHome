@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## New floor plan initial audit - 2026-06-28
+
+- 新增 `references/newFloorPlan.png`，纳入新版平面布置图作为后续点位重排依据。
+- 新增 `docs/current/新平面图初读与智能点位影响_V1.md`，按新图识别书房、衣帽间、洗衣机、客厅影音、P2S 候选和网络设备区等关键变化。
+- 标记旧 `Bedroom1/Balcony1/Balcony2/Storage room` 基线需要按新图重新映射，暂不直接覆盖现有 `inventory/` 清单。
+
 ## RS-485 topology and cable-length estimate - 2026-06-28
 
 - 新增 `docs/current/RS485线路拓扑与米数估算_V1.md`，明确 RS-485 在家中网络拓扑、日立/格恩独立通道、施工管路和当前户型图下的米数估算。

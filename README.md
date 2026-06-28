@@ -14,6 +14,7 @@
 - `docs/current/设计师发送前点位复核_V1.md`：发给设计师/施工队前的点位歧义审查和需上图事项。
 - `docs/current/用电功率与插座点位复核_V1.md`：设备功率、插座点位、回路边界、UPS 边界和智能控制禁区复核。
 - `docs/current/RS485线路拓扑与米数估算_V1.md`：RS-485 在家中网络拓扑、独立管线和当前户型图下的米数估算。
+- `docs/current/新平面图初读与智能点位影响_V1.md`：根据新版平面图识别空间功能、旧基线冲突和点位更新前置问题。
 - `docs/current/装修施工交底_网络与智能家居_V2.1.md`：施工基础稿；冲突时以 V3.2 为准。
 - `diagrams/06_暖通与加湿_RS485架构.svg`：暖通总线架构。
 - `diagrams/07_日立空调_Modbus控制流程.svg`：日立发现与控制状态机。
@@ -22,6 +23,7 @@
 - `scripts/generate_hitachi_ha_yaml.py`：按室内机数量生成只读 YAML。
 - `references/日立中央空调/`：日立 Modbus 点表原件。
 - `references/格恩通信协议列表格式-液晶控制器.xlsx`：格恩中央加湿协议原件。
+- `references/newFloorPlan.png`：新版平面布置图，作为后续点位重排依据。
 - `software/`、`inventory/`、`commissioning/`、`external/`：后续自研软件、设备清单、现场验收和外部依赖管理工作区。
 - `inventory/`：首期采购候选、硬件决策矩阵、装修队布线清单、网络端口、功率/插座点位、IP/VLAN、RS-485 通道/线长和设备清单。
 
@@ -41,6 +43,8 @@
 - Balcony2 保留 1 个备用网口。
 - 储物间为网络与自动化设备间。
 - 采用 16 口可管理 PoE+ 交换机、两台有线 AP、PoE Zigbee 协调器。
+
+> 注意：`references/newFloorPlan.png` 显示了新的书房、衣帽间、洗衣机和客厅影音布局。上述空间基线在正式施工前需要按 `docs/current/新平面图初读与智能点位影响_V1.md` 重新映射。
 
 ## 放入本机项目目录
 
