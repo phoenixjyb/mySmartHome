@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Power and socket point audit - 2026-06-28
+
+- 新增 `docs/current/用电功率与插座点位复核_V1.md`，把设备功率、插座点位、回路边界、UPS 边界和智能控制禁区纳入设计定稿复核。
+- 新增 `inventory/power_socket_points.csv`，记录机柜、3090 工作站、P2S、排风、AV/投影、窗帘、智能开关、水路、暖通和入户设备的供电复核项。
+- 更新设计师发送前复核和装修队施工交底，要求强电插座与弱电点位同图复核，并明确 Home Assistant/智能插座不得作为关键设备唯一断电控制。
+
 ## Designer pre-send position audit - 2026-06-28
 
 - 新增 `docs/current/设计师发送前点位复核_V1.md`，列出发给设计师前必须落图和仍需业主确认的点位。
