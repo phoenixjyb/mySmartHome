@@ -47,9 +47,12 @@ Treat `docs/archive/` as historical only. Do not revive archived decisions unles
 - `Bedroom1` is the office and RTX 3090 workstation room; keep two Cat6A drops.
 - `Bedroom2` may contain another desktop; keep two Cat6A drops.
 - `Bedroom3` has no fixed network port; use Wi-Fi/Zigbee sensors.
-- `Balcony1` is the Bambu P2S printing area; use Wi-Fi for the printer, keep one spare Cat6A, preserve the living-room balcony door, and plan short local exhaust plus independent safety monitoring.
-- `Balcony2` keeps one spare network port and gets leak sensing if a washing machine or water device is installed.
-- `Storage room` is only for network and automation equipment: rack/cabinet, ONT, router/firewall, managed PoE switch, patch panel, Mac mini, UPS, Zigbee coordinator network path, and RS-485 gateways. Do not move the 3090 workstation or P2S back into this room.
+- `Storage room` maps to the `衣帽间` area on `references/newFloorPlan.png`. It is the network and automation equipment room: rack/cabinet, ONT, router/firewall, managed PoE switch, patch panel, Mac mini, UPS, Zigbee coordinator network path, and RS-485 gateways.
+- `次卫生间` is the confirmed washing-machine area; update water-leak, socket, drain, and wet-area electrical checks around this room rather than assuming washing on a balcony.
+- The living-room projector should be coordinated with the screen/幕布 position shown on `references/newFloorPlan.png`.
+- `Balcony1` remains the preferred Bambu P2S printing-area baseline unless the user explicitly changes it after risk review; use Wi-Fi for the printer, keep one spare Cat6A, preserve the living-room balcony door, and plan short local exhaust plus independent safety monitoring.
+- `Balcony2` keeps one spare network port only as a reserve unless a future water device is installed there.
+- Do not put the P2S in the storage room/衣帽间 by default. That room contains network, UPS, clothes/cabinetry, and possibly refrigerator-adjacent equipment; a 3D printer there would add heat, particulate/VOC emission, fire load, noise, and maintenance conflict unless there is a dedicated non-clothing bay, direct independent exhaust, fire detection, power isolation, and clear service space.
 - Use two wired ceiling APs initially. A third AP is only a conduit/reserve option.
 - Use a 16-port managed PoE+ switch with a 24-port passive patch panel for expansion.
 - Use a PoE/Ethernet Zigbee coordinator in an open central hallway location, not inside a metal rack.

@@ -1,14 +1,14 @@
 id,category,room_or_location,protocol_or_network,priority,quantity,status,notes
-HOST-01,controller,Storage room,Ethernet / Automation VLAN,P1,1,planned,mini PC or Mac mini; HAOS/VM; UPS powered
-ROUTER-01,network,Storage room,Ethernet / Management VLAN,P1,1,planned,2.5G capable; VLAN; WireGuard; config backup
-SWITCH-01,network,Storage room,Ethernet / PoE / VLAN,P1,1,planned,16/24 port managed PoE+; 24 port preferred if budget allows
+HOST-01,controller,Storage room / 新图衣帽间,Ethernet / Automation VLAN,P1,1,planned,mini PC or Mac mini; HAOS/VM; UPS powered
+ROUTER-01,network,Storage room / 新图衣帽间,Ethernet / Management VLAN,P1,1,planned,2.5G capable; VLAN; WireGuard; config backup
+SWITCH-01,network,Storage room / 新图衣帽间,Ethernet / PoE / VLAN,P1,1,planned,16/24 port managed PoE+; 24 port preferred if budget allows
 AP-01,wifi,Left hallway ceiling,PoE Ethernet,P1,1,planned,AP1; ceiling mount
 AP-02,wifi,Living room ceiling,PoE Ethernet,P1,1,planned,AP2; ceiling mount
 ZB-COORD-01,zigbee,Central hallway,PoE Ethernet / Zigbee,P1,1,planned,Ethernet/PoE coordinator for Zigbee2MQTT
-RS485-GW-01,modbus,Storage room,Ethernet + RS-485,P1,1,planned,4 isolated RS-485 channels
-UPS-01,power,Storage room,AC/PDU,P0,1,planned,1000-1500VA; network and automation only
-RACK-01,cabinet,Storage room,physical,P0,1,planned,9U/12U ventilated cabinet
-PATCH-01,network,Storage room,passive,P0,1,planned,24-port patch panel
+RS485-GW-01,modbus,Storage room / 新图衣帽间,Ethernet + RS-485,P1,1,planned,4 isolated RS-485 channels
+UPS-01,power,Storage room / 新图衣帽间,AC/PDU,P0,1,planned,1000-1500VA; network and automation only
+RACK-01,cabinet,Storage room / 新图衣帽间,physical,P0,1,planned,9U/12U ventilated cabinet
+PATCH-01,network,Storage room / 新图衣帽间,passive,P0,1,planned,24-port patch panel
 TH-SENSORS,environment,Whole house,Zigbee,P2,8,planned,temperature/humidity sensors
 WATER-SENSORS,safety,Water points,Zigbee,P2,5-7,planned,leak sensors
 DOOR-SENSORS,security,Entry/balconies/windows,Zigbee,P2,3+,planned,door/window sensors
@@ -16,5 +16,5 @@ PRES-SENSORS,presence,Main rooms,Zigbee,P2,7-8,planned,PIR/mmWave depending room
 CO2-01,environment,Living room,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring
 CO2-02,environment,Bedroom1,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for office
 SMOKE-01,safety,Hall/living room,standalone,P2,1,planned,independent alarm
-SMOKE-02,safety,Storage room,standalone,P2,1,planned,independent alarm; optional dry contact
-SMOKE-03,safety,Balcony1,standalone,P2,1,planned,independent alarm for P2S area
+SMOKE-02,safety,Storage room / 新图衣帽间,standalone,P2,1,planned,independent alarm; optional dry contact
+SMOKE-03,safety,P2S candidate area,standalone,P2,1,planned,independent alarm for P2S area

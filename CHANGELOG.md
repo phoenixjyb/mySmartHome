@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## New floor plan confirmations - 2026-06-28
+
+- 记录业主确认：`Storage room` 对应新版平面图中的衣帽间，洗衣机固定在次卫生间，客厅投影按新版平面图幕布位置协调。
+- 更新新平面图审计、施工交底和用电复核：把次卫洗衣、衣帽间机柜、幕布/投影同图复核纳入当前基线。
+- 记录 P2S 放入 storage room/衣帽间的风险判断：不建议作为默认方案，除非独立打印舱位、独立外排、供电隔离、防火监测和检修空间都能满足。
+
 ## New floor plan initial audit - 2026-06-28
 
 - 新增 `references/newFloorPlan.png`，纳入新版平面布置图作为后续点位重排依据。
