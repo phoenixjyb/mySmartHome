@@ -21,7 +21,7 @@ smartHouse/
 │   ├── hitachi_modbus_readonly.yaml.example
 │   └── secrets.yaml.example
 ├── diagrams/
-│   ├── 01…07 PNG/SVG
+│   ├── 01…08 PNG/SVG
 │   └── sources/*.dot
 ├── software/
 │   ├── smarthouse-core/README.md

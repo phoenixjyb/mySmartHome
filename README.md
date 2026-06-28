@@ -17,6 +17,7 @@
 - `docs/current/装修施工交底_网络与智能家居_V2.1.md`：施工基础稿；冲突时以 V3.2 为准。
 - `diagrams/06_暖通与加湿_RS485架构.svg`：暖通总线架构。
 - `diagrams/07_日立空调_Modbus控制流程.svg`：日立发现与控制状态机。
+- `diagrams/08_RS485线路拓扑与米数估算.svg`：RS-485 分通道走线和预留米数图。
 - `config/home-assistant/hitachi/`：只读调试 YAML 和 secrets 示例。
 - `scripts/generate_hitachi_ha_yaml.py`：按室内机数量生成只读 YAML。
 - `references/日立中央空调/`：日立 Modbus 点表原件。

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2450" height="820" viewBox="0 0 2450 820">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#52606D"/></marker></defs>
+<rect width="2450" height="820" fill="#F8FAFC"/>
+<text x="70" y="58" font-size="38" fill="#102A43">RS-485 线路拓扑与米数估算 V1</text>
+<text x="72" y="92" font-size="20" fill="#52606D">当前为设计阶段估算；最终长度按厂家设备位置、正式施工图路径和现场绕梁/吊顶/转角复核。</text>
+<rect x="70" y="110" width="360" height="130" rx="18" fill="#E8F2FC" stroke="#2474B5" stroke-width="3"/>
+<text x="250.0" y="168.0" font-size="18" text-anchor="middle" fill="#102A43">HA主控 / Mac mini</text>
+<text x="250.0" y="193.0" font-size="18" text-anchor="middle" fill="#102A43">储物间设备间</text>
+<rect x="520" y="110" width="360" height="130" rx="18" fill="#DDEAF7" stroke="#2474B5" stroke-width="3"/>
+<text x="700.0" y="168.0" font-size="18" text-anchor="middle" fill="#102A43">储物间交换机</text>
+<text x="700.0" y="193.0" font-size="18" text-anchor="middle" fill="#102A43">Automation VLAN</text>
+<rect x="970" y="90" width="450" height="170" rx="18" fill="#FFF2D8" stroke="#D28E1E" stroke-width="3"/>
+<text x="1195.0" y="168.0" font-size="18" text-anchor="middle" fill="#102A43">4路隔离 RS-485 to Ethernet 网关</text>
+<text x="1195.0" y="193.0" font-size="18" text-anchor="middle" fill="#102A43">每路独立参数、独立A/B/GND</text>
+<line x1="430" y1="175" x2="520" y2="175" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="475.0" y="155.0" font-size="15" text-anchor="middle" fill="#334E68">Ethernet</text>
+<line x1="880" y1="175" x2="970" y2="175" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="925.0" y="155.0" font-size="15" text-anchor="middle" fill="#334E68">机柜短跳线</text>
+<rect x="1540" y="90" width="330" height="90" rx="18" fill="#FCE8E6" stroke="#C33A3A" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1705.0" y="128.0" font-size="16" text-anchor="middle" fill="#102A43">Port 1：日立</text>
+<text x="1705.0" y="151.0" font-size="16" text-anchor="middle" fill="#102A43">独立RS-485</text>
+<line x1="1420" y1="175" x2="1540" y2="135.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1540" y="230" width="330" height="90" rx="18" fill="#EAF6ED" stroke="#2E8B57" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1705.0" y="268.0" font-size="16" text-anchor="middle" fill="#102A43">Port 2：格恩</text>
+<text x="1705.0" y="291.0" font-size="16" text-anchor="middle" fill="#102A43">独立RS-485</text>
+<line x1="1420" y1="175" x2="1540" y2="275.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1540" y="370" width="330" height="90" rx="18" fill="#F2F4F7" stroke="#8A94A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1705.0" y="408.0" font-size="16" text-anchor="middle" fill="#102A43">Port 3：未来水表/总水阀</text>
+<text x="1705.0" y="431.0" font-size="16" text-anchor="middle" fill="#102A43">空管+拉线</text>
+<line x1="1420" y1="175" x2="1540" y2="415.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1540" y="510" width="330" height="90" rx="18" fill="#F2F4F7" stroke="#8A94A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1705.0" y="548.0" font-size="16" text-anchor="middle" fill="#102A43">Port 4：未来设备</text>
+<text x="1705.0" y="571.0" font-size="16" text-anchor="middle" fill="#102A43">空管+拉线</text>
+<line x1="1420" y1="175" x2="1540" y2="555.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="2030" y="40" width="350" height="80" rx="18" fill="#FFF8F5" stroke="#C33A3A" stroke-width="3"/>
+<text x="2205.0" y="73.0" font-size="15" text-anchor="middle" fill="#102A43">日立靠近储物间</text>
+<text x="2205.0" y="95.0" font-size="15" text-anchor="middle" fill="#102A43">预留 5 m</text>
+<rect x="2030" y="135" width="350" height="80" rx="18" fill="#FFF8F5" stroke="#C33A3A" stroke-width="3"/>
+<text x="2205.0" y="168.0" font-size="15" text-anchor="middle" fill="#102A43">日立中部检修口</text>
+<text x="2205.0" y="190.0" font-size="15" text-anchor="middle" fill="#102A43">预留 12 m（基线）</text>
+<rect x="2030" y="230" width="350" height="80" rx="18" fill="#FFF8F5" stroke="#C33A3A" stroke-width="3"/>
+<text x="2205.0" y="263.0" font-size="15" text-anchor="middle" fill="#102A43">日立右侧远端</text>
+<text x="2205.0" y="285.0" font-size="15" text-anchor="middle" fill="#102A43">预留 18 m</text>
+<rect x="2030" y="340" width="350" height="80" rx="18" fill="#F4FBF6" stroke="#2E8B57" stroke-width="3"/>
+<text x="2205.0" y="373.0" font-size="15" text-anchor="middle" fill="#102A43">格恩中部/厨卫</text>
+<text x="2205.0" y="395.0" font-size="15" text-anchor="middle" fill="#102A43">预留 12 m（基线）</text>
+<rect x="2030" y="435" width="350" height="80" rx="18" fill="#F4FBF6" stroke="#2E8B57" stroke-width="3"/>
+<text x="2205.0" y="468.0" font-size="15" text-anchor="middle" fill="#102A43">格恩右侧远端</text>
+<text x="2205.0" y="490.0" font-size="15" text-anchor="middle" fill="#102A43">预留 18 m</text>
+<rect x="2030" y="545" width="350" height="80" rx="18" fill="#F7F8FA" stroke="#8A94A6" stroke-width="3"/>
+<text x="2205.0" y="578.0" font-size="15" text-anchor="middle" fill="#102A43">未来水路/仪表</text>
+<text x="2205.0" y="600.0" font-size="15" text-anchor="middle" fill="#102A43">预留 12 m</text>
+<rect x="2030" y="640" width="350" height="80" rx="18" fill="#F7F8FA" stroke="#8A94A6" stroke-width="3"/>
+<text x="2205.0" y="673.0" font-size="15" text-anchor="middle" fill="#102A43">未来其他设备</text>
+<text x="2205.0" y="695.0" font-size="15" text-anchor="middle" fill="#102A43">预留 18–20 m</text>
+<line x1="1870" y1="135" x2="2030" y2="80" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="135" x2="2030" y2="175" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="135" x2="2030" y2="270" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="275" x2="2030" y2="380" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="275" x2="2030" y2="475" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="415" x2="2030" y2="585" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1870" y1="555" x2="2030" y2="680" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="70" y="400" width="1350" height="320" rx="18" fill="#FFFDE7" stroke="#B59B00" stroke-width="3"/>
+<text x="745.0" y="512.5" font-size="20" text-anchor="middle" fill="#102A43">施工边界</text>
+<text x="745.0" y="539.5" font-size="20" text-anchor="middle" fill="#102A43">1. 日立和格恩不得共线/共管</text>
+<text x="745.0" y="566.5" font-size="20" text-anchor="middle" fill="#102A43">2. 强电、空调电源、影音线与RS-485分管</text>
+<text x="745.0" y="593.5" font-size="20" text-anchor="middle" fill="#102A43">3. 厂家未确认线型前先做独立管+拉线</text>
+<text x="745.0" y="620.5" font-size="20" text-anchor="middle" fill="#102A43">4. 终点必须是可检修的转换器/控制器位置</text>
+</svg>

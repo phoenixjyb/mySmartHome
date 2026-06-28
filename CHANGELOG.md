@@ -4,6 +4,7 @@
 
 - 新增 `docs/current/RS485线路拓扑与米数估算_V1.md`，明确 RS-485 在家中网络拓扑、日立/格恩独立通道、施工管路和当前户型图下的米数估算。
 - 新增 `inventory/rs485_cable_runs.csv`，将 Port 1/2/3/4 的候选路径、估算长度和建议预留长度结构化。
+- 新增 `diagrams/08_RS485线路拓扑与米数估算.svg/png` 和 DOT 源文件，用于设计师/施工队快速理解 RS-485 分线和预留米数。
 - 更新 `inventory/rs485_channels.md` 和施工交底，强调米数为设计阶段估算，最终以厂家设备位置和正式施工图路径复核为准。
 
 ## Power and socket point audit - 2026-06-28
