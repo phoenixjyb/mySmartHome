@@ -185,4 +185,5 @@
 - UniFi U7 Pro: https://techspecs.ui.com/unifi/wifi/u7-pro
 - UniFi Pro Max 16 PoE: https://techspecs.ui.com/unifi/switching/usw-pro-max-16-poe
 - Moxa Modbus TCP gateways: https://www.moxa.com/en/products/industrial-edge-connectivity/protocol-gateways/modbus-tcp-gateways
-- ZLAN5143D: https://www.zlmcu.com/en/products_ZLAN5143D.htm
+- ZLAN5443D: https://www.zlan-iot.com/products_ZLAN5443D.htm
+- ZLAN5443A: https://www.zlmcu.com/en/products_ZLAN5443A.htm

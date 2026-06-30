@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## First-stage hardware model recommendations - 2026-06-30
+
+- 新增 `docs/current/首期硬件型号与购买链接建议_V1.md`，把 UPS、机柜、PDU、交换机、AP、主控、Zigbee 协调器、RS-485 网关、传感器和执行器整理成型号级候选表。
+- 每项候选增加京东/淘宝搜索链接、粗略价格区间、推荐/备选关系和下单前确认事项。
+- 将 RS-485 网关候选修正为 4 路方向：`ZLAN5443D`/`ZLAN5443A`、Waveshare 4-CH、Moxa NPort 5430I；避免把单路 `ZLAN5143D` 当成 4 路网关。
+
 ## P2S storage-room placement confirmed - 2026-06-28
 
 - 记录业主确认：Bambu P2S 放入 storage room/新版平面图衣帽间。

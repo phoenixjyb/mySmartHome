@@ -11,12 +11,14 @@ Planned files:
 - `ip_plan.md`: VLANs, static DHCP reservations, hostnames.
 - `rs485_channels.md`: gateway port, bus wiring, serial settings, slave IDs, termination.
 - `purchase_candidates.md`: hardware candidates and decision status.
+- `docs/current/首期硬件型号与购买链接建议_V1.md`: model-level purchase candidates, rough price bands, and JD/Taobao search links.
 
 Do not store passwords, API keys, tokens, or private account recovery data here.
 
 Current files:
 
 - `purchase_candidates.md`: initial hardware candidate list and purchase priority.
+- `../docs/current/首期硬件型号与购买链接建议_V1.md`: current model-level recommendations and purchase links.
 - `hardware_decision_matrix.md`: tradeoff matrix for controller, network ecosystem, switch, AP, Zigbee, RS-485, and UPS choices.
 - `contractor_wiring_checklist.csv`: contractor-facing wiring and installation checklist.
 - `network_ports.csv`: construction-stage low-voltage port schedule.
