@@ -1,6 +1,6 @@
 id,location,port_count,cable_type,termination,target_vlan,initial_patch,installer_notes,status
-AP1,左侧中央走廊吊顶,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；覆盖书房/次卧/厨房/衣帽间设备区,planned
-AP2,客厅中部偏右吊顶,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；覆盖客厅/Bedroom3/两个阳台,planned
+AP1,左侧中央走廊吊顶/可暗线顶面,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；暗线出线顶面明装；覆盖书房/次卧/厨房/衣帽间设备区,planned
+AP2,客厅边吊/空调出风口附近可施工区域,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；客厅无满吊顶时允许偏置；暗线出线顶面明装；覆盖客餐厅/阳台,planned
 AP-R,卧室3外走廊或吊顶检修区,1,空管+拉线；条件允许则Cat6/Cat6A,24口配线架,20 Automation,no,至少预留空管；实测后再决定是否采购AP3,planned
 B1-DATA-1,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,yes,RTX 3090工作站优先使用,planned
 B1-DATA-2,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,no,扩展坞/NAS/备用,planned

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## AP placement and floor-cabinet clarification - 2026-07-01
+
+- 记录客厅无满吊顶约束：AP2 不强求几何正中心，可放在客厅边吊/空调出风口附近可施工区域，暗线出线、顶面明装、线缆不外露。
+- 更新施工交底和 inventory：AP 点位避开金属风管、空调出风口、灯带驱动、投影幕盒和柜体遮挡；偏置后入住调试再实测，必要时启用 AP-R。
+- 将网络设备柜从壁挂/待定修正为 12U 优先落地网络机柜，不按壁挂加固施工。
+
 ## First-stage hardware model recommendations - 2026-06-30
 
 - 新增 `docs/current/首期硬件型号与购买链接建议_V1.md`，把 UPS、机柜、PDU、交换机、AP、主控、Zigbee 协调器、RS-485 网关、传感器和执行器整理成型号级候选表。

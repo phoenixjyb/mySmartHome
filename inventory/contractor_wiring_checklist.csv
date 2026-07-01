@@ -1,10 +1,10 @@
 id,area,item,type,quantity,cable_or_pipe,from,to,responsible,acceptance,status
-RACK-SPACE,Storage room / 新图衣帽间,9U/12U通风机柜安装位,cabinet,1,wall mount space,storage room wall,storage room,装修队,位置/门开启/检修空间/衣物和冰箱散热隔离确认,planned
+RACK-SPACE,Storage room / 新图衣帽间,12U优先落地网络机柜安装位,cabinet,1,floor cabinet space,storage room floor/wall side,storage room,装修队,位置/门开启/检修空间/衣物和冰箱散热隔离确认；不按壁挂加固施工,planned
 RACK-POWER,Storage room / 新图衣帽间,机柜独立带地电源,power,1,220V grounded circuit,distribution panel,storage room rack,电工,接地/插座数量/位置确认,planned
 RACK-VENT,Storage room / 新图衣帽间,机柜通风或静音排风,ventilation,1,vent path,storage room,storage room,装修队,不完全密闭/通风路径确认,planned
 PATCH-24,Storage room / 新图衣帽间,24口配线架安装位,network,1,patch panel,all network drops,storage room rack,弱电施工,配线架编号清晰,planned
-AP1,Hallway left,吸顶AP1网线,network,1,Cat6 or Cat6A,storage room patch panel,left hallway ceiling,弱电施工,PoE网线测试/编号/照片,planned
-AP2,Living room,吸顶AP2网线,network,1,Cat6 or Cat6A,storage room patch panel,living room ceiling,弱电施工,PoE网线测试/编号/照片,planned
+AP1,Hallway left,吸顶AP1网线,network,1,Cat6 or Cat6A,storage room patch panel,left hallway ceiling or hidden-wire ceiling point,弱电施工,PoE网线测试/编号/照片；暗线出线顶面明装,planned
+AP2,Living room,吸顶AP2网线,network,1,Cat6 or Cat6A,storage room patch panel,living room side ceiling near AC outlet but not blocked,弱电施工,PoE网线测试/编号/照片；客厅无满吊顶时允许偏置安装；暗线出线顶面明装,planned
 AP-R,Bedroom3 hallway,AP3备用空管或网线,reserve,1,empty conduit with pull string; Cat6/Cat6A if feasible,storage room patch panel,Bedroom3 hallway ceiling,弱电施工,至少空管和拉线；如穿网线则测试/编号/照片,planned
 ZIGBEE-POE,Central hallway,PoE Zigbee协调器网线,network,1,Cat6,storage room patch panel,central hallway open location,弱电施工,不得进金属机柜/PoE网线测试/照片,planned
 B1-DATA-1,Bedroom1,办公桌网口1,network,1,Cat6A,storage room patch panel,Bedroom1 desk,弱电施工,网线测试/墙面编号,planned
