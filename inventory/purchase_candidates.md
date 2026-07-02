@@ -26,7 +26,10 @@
 
 | ID | 类别 | 数量 | 推荐方向 | 候选 | 状态 |
 |---|---|---:|---|---|---|
-| P1-HOST-01 | 主控主机 | 1 | mini PC / Mac mini，16GB RAM，500GB/1TB NVMe | N100/N150/N305 mini PC；已有/新购 Mac mini | 推荐优先 |
+| P1-HOST-01 | 主控主机 | 1 | Apple Silicon Mac mini，16GB RAM 起步，内置 SSD + 外部备份盘/NAS 备份 | 已有/新购 Mac mini | 当前基线 |
+| P1-HOST-02 | 主控备选 | 1 | N100/N150/N305 mini PC，16GB RAM，500GB/1TB NVMe | 如 Mac mini 不放机柜或预算改变时再选 | 备选 |
+| P1-HOST-03 | 备份/实验节点 | 0-1 | Raspberry Pi 5 + NVMe + 官方电源 + 主动散热 | 备份 HA、边缘采集、现场调试 | 可选 |
+| P1-AI-01 | AI 节点 | 0-1 | Jetson Orin Nano | 摄像头 AI、视觉/语音模型实验 | 后期可选 |
 | P1-ROUTER-01 | 路由器/防火墙 | 1 | 2.5G 多口，VLAN，WireGuard | OPNsense/OpenWrt mini PC；Omada/UniFi 网关 | 待生态选择 |
 | P1-SWITCH-01 | PoE 交换机 | 1 | 16/24 口可管理 PoE+，100W+ PoE，VLAN | Omada SG3218XP-M2 类；UniFi Pro Max 16 PoE 类；24 口同级更优 | 推荐 24 口优先评估 |
 | P1-AP-01 | AP1 | 1 | 吸顶 Wi-Fi 6/7，2.5G uplink，PoE+ | Omada Wi-Fi 7 AP；UniFi U7 Pro 类 | 待网络生态选择 |

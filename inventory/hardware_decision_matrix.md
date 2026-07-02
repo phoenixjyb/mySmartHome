@@ -7,7 +7,7 @@
 
 | 类别 | 当前推荐 | 备选 | 暂不推荐 |
 |---|---|---|---|
-| 主控 | mini PC / Mac mini，16GB RAM，NVMe SSD | Raspberry Pi 5 + NVMe 作为实验/备份 | microSD Pi 长期主控、Home Assistant Green 作为长期平台 |
+| 主控 | Apple Silicon Mac mini，16GB RAM 起步，内置 SSD + 外部备份 | mini PC 作为主控备选；Raspberry Pi 5 + NVMe 作为实验/备份 | microSD Pi 长期主控、Home Assistant Green 作为长期平台 |
 | 网络生态 | TP-Link Omada 优先评估 | UniFi；OpenWrt/OPNsense + 独立交换机/AP | 只能云管、不能导出配置的方案 |
 | 交换机 | 24 口可管理 PoE+ 优先；16 口为最低 | Omada SG3218XP-M2 类、UniFi Pro Max 16 PoE 类 | 不支持 VLAN/PoE 管理的普通交换机 |
 | AP | 2 台吸顶 Wi-Fi 6/7，PoE+，2.5G uplink | 后期实测再决定是否补有线 AP | 无线 Mesh 主回程；本轮不预留 AP-R/AP3 |
@@ -19,9 +19,10 @@
 
 | 方案 | 优点 | 风险 | 结论 |
 |---|---|---|---|
-| mini PC N100/N150/N305 类 | NVMe、低功耗、x86 生态、HAOS/虚拟化友好 | 品牌质量差异大，需要选可靠电源/散热 | 首选之一 |
-| Mac mini | 做工和稳定性好，适合 VM 和后续服务 | 成本高；macOS/VM 运维方式要固定 | 如果已有或预算允许，推荐 |
+| Mac mini | 做工和稳定性好，适合 VM 和后续服务；Apple Silicon 满足 ARM 偏好 | 成本高；macOS/VM 运维方式要固定；256GB 版本需外部备份盘或 NAS 备份 | 当前主控基线 |
+| mini PC N100/N150/N305 类 | NVMe、低功耗、x86 生态、HAOS/虚拟化友好 | 不满足 ARM 偏好；品牌质量差异大，需要选可靠电源/散热 | 主控备选 |
 | Raspberry Pi 5 + NVMe | 低成本、生态广、适合实验 | 长期主控余量、散热、电源和存储要额外处理 | 备份/实验/边缘节点 |
+| Jetson Orin Nano | ARM + NVIDIA GPU，适合本地视觉/语音/AI 推理 | JetPack/驱动维护复杂；做 HA 主控浪费且不省心 | 未来 AI 节点 |
 | Home Assistant Green | 上手快、官方硬件 | 4GB/32GB 级别更适合轻量 HA | 不作为本项目长期主控 |
 
 决策要求：
@@ -171,11 +172,10 @@
 1. 是否直接选 Omada 生态；
 2. 交换机 24 口还是 16 口；
 3. AP 是否直接 Wi-Fi 7；
-4. 主控用 mini PC 还是 Mac mini；
-5. RS-485 网关在 Moxa 与国产工业网关之间如何取舍；
-6. 门口到底装摄像头、门铃，还是只预留；
-7. 窗帘采用 Zigbee 还是 RS-485；
-8. 是否安装电动总水阀。
+4. RS-485 网关在 Moxa 与国产工业网关之间如何取舍；
+5. 门口到底装摄像头、门铃，还是只预留；
+6. 窗帘采用 Zigbee 还是 RS-485；
+7. 是否安装电动总水阀。
 
 ## 10. 参考来源
 

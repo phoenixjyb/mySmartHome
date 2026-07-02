@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 主控主机决策 - 2026-07-03
+
+- 确定首期全屋智能主控采用 Apple Silicon Mac mini，运行 Home Assistant OS 虚拟机，并接入 UPS。
+- Raspberry Pi 5 + NVMe 降级为备份/实验/边缘采集节点；Jetson Orin Nano 仅作为未来本地视觉、语音或 AI 推理节点候选。
+- 更新硬件清单、采购候选、强电插座、网络端口和实施路线图，不再把主控选择作为开放决策。
+
 ## Point-map revision for AP, Zigbee, sockets, sensors, and curtains - 2026-07-02
 
 - 取消 AP-R/AP3 预留，本轮只做 AP1、AP2 两个 PoE 吸顶 AP 点位；如果入住后实测覆盖不足，再另行补有线 AP 或调整 AP2。
