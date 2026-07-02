@@ -1,50 +1,50 @@
-# RS-485 Channel Plan
+# RS-485 通道规划
 
 **状态：** 初版规划。施工前需由暖通/加湿供应商确认线型、屏蔽、接地和终端电阻。
 
-## Gateway requirement
+## 网关要求
 
-首期采购 4 路相互隔离的 RS-485 to Ethernet 网关。
+首期采购 4 路相互隔离的 RS-485 转以太网网关。
 
-Required features:
+必需能力：
 
-- 4 independent RS-485 channels.
-- Per-channel baud rate, parity, stop bit, timeout.
-- Transparent RTU over TCP.
-- Modbus RTU to Modbus TCP support preferred.
-- Fixed IP / static DHCP.
-- Config export.
-- DIN rail or wall-mount install.
-- Clear A/B/GND, shielding, and termination documentation.
+- 4 路相互独立的 RS-485 通道。
+- 每路可独立配置波特率、校验、停止位和超时。
+- 支持 RTU over TCP 透明传输。
+- 优先支持 Modbus RTU 转 Modbus TCP。
+- 支持固定 IP 或 DHCP 静态绑定。
+- 支持配置导出。
+- 支持导轨或壁挂安装。
+- A/B/GND、屏蔽和终端电阻说明清晰。
 
-## Channels
+## 通道分配
 
-| Port | System | Protocol state | Serial settings | Slave ID | Wiring | HA mode | Status |
+| 端口 | 系统 | 协议状态 | 串口参数 | 从机地址 | 走线 | 接入模式 | 状态 |
 |---|---|---|---|---|---|---|---|
-| 1 | Hitachi VRF Modbus/MiniModbus converter | Point table obtained; install manual needed | TBD | TBD | Dedicated shielded RS-485 from converter to storage room | read-only first | planned |
-| 2 | 格恩/Gen central humidifier | Modbus RTU known from workbook | 9600 8N1 known; write details TBD | likely 1; confirm | Dedicated shielded RS-485 from controller to storage room | read-only first | planned |
-| 3 | Future meter/water meter | TBD | TBD | TBD | reserve conduit/channel | none | reserve |
-| 4 | Future Daikin/other equipment | TBD | TBD | TBD | reserve conduit/channel | none | reserve |
+| 1 | 日立多联机 Modbus/MiniModbus 转换器 | 已有点表，仍需安装手册 | 待确认 | 待确认 | 转换器到衣帽间独立屏蔽 RS-485 线 | 先只读 | 已规划 |
+| 2 | 格恩中央加湿 | 工作簿显示 Modbus RTU | 已知 9600 8N1，写入细节待确认 | 大概率为 1，需确认 | 控制器到衣帽间独立屏蔽 RS-485 线 | 先只读 | 已规划 |
+| 3 | 未来电表/水表 | 待确认 | 待确认 | 待确认 | 预留管路/通道 | 暂不接入 | 预留 |
+| 4 | 未来大金或其他设备 | 待确认 | 待确认 | 待确认 | 预留管路/通道 | 暂不接入 | 预留 |
 
-## Cable-length planning
+## 线长规划
 
-See `docs/current/RS485线路拓扑与米数估算_V1.md` and `inventory/rs485_cable_runs.csv`.
+详见 `docs/current/RS485线路拓扑与米数估算_V1.md` 和 `inventory/rs485_cable_runs.csv`。
 
-Current reserve guidance:
+当前预留建议：
 
-- Port 1 Hitachi near storage room: reserve 5 m if vendor allows converter near the rack.
-- Port 1 Hitachi central ceiling/service hatch: reserve 12 m as baseline.
-- Port 1 Hitachi far-right equipment zone: reserve 18 m as contingency.
-- Port 2 Gen central humidifier near storage/kitchen/bathroom service zone: reserve 12 m as baseline.
-- Port 2 Gen far-right equipment zone: reserve 18 m as contingency.
-- Port 3 future water/meter reserve: reserve 12 m conduit/pull string.
-- Port 4 future equipment reserve: reserve 18-20 m conduit/pull string.
+- 1 号口日立转换器靠近衣帽间：如厂家允许转换器靠近机柜，预留 5 m。
+- 1 号口日立转换器在中部吊顶/检修口：按 12 m 作为基线。
+- 1 号口日立转换器在右侧远端设备区：按 18 m 作为兜底。
+- 2 号口格恩中央加湿控制器在衣帽间/厨房/卫生间服务区附近：按 12 m 作为基线。
+- 2 号口格恩中央加湿控制器在右侧远端设备区：按 18 m 作为兜底。
+- 3 号口未来水表/水阀预留：预留 12 m 空管+拉线。
+- 4 号口未来设备预留：预留 18-20 m 空管+拉线。
 
-These are design-stage estimates from the current floor plan. Final lengths must be checked from formal construction drawings and as-built routing before wall/ceiling closure.
+以上为设计阶段估算。最终长度必须在正式施工图和现场绕梁、吊顶、转角复核后确定。
 
-## Rules
+## 规则
 
-- Do not share Hitachi and humidifier on one bus.
-- Do not assume `RS-485` means `Modbus`.
-- Do not enable writes until read-only validation and original-controller cross-checks pass.
-- Record every discovered serial setting and register behavior under `commissioning/`.
+- 日立和加湿器不得共用同一条 RS-485 总线。
+- 不能因为设备写了 RS-485 就默认它是 Modbus。
+- 只读验证和原厂控制器交叉确认完成前，不启用写入控制。
+- 每次发现的串口参数和寄存器行为都要记录到 `commissioning/`。

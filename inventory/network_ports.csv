@@ -1,20 +1,20 @@
-id,location,port_count,cable_type,termination,target_vlan,initial_patch,installer_notes,status
-AP1,左侧中央走廊吊顶/可暗线顶面,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；暗线出线顶面明装；覆盖书房/次卧/厨房/衣帽间设备区,planned
-AP2,客厅边吊/空调出风口附近可施工区域,1,Cat6 or Cat6A,24口配线架,20 Automation,yes,PoE吸顶AP；客厅无满吊顶时允许偏置；暗线出线顶面明装；覆盖客餐厅/阳台,planned
-B1-DATA-1,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,yes,RTX 3090工作站优先使用,planned
-B1-DATA-2,Bedroom1办公桌,1,Cat6A,24口配线架,10 Trusted,no,扩展坞/NAS/备用,planned
-B2-DATA-1,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,yes,未来台式机,planned
-B2-DATA-2,Bedroom2书桌,1,Cat6A,24口配线架,10 Trusted,no,备用,planned
-MB-BAL-DATA-1,主卧阳台书桌,1,Cat6A,24口配线架,10 Trusted,no,主卧阳台如作为电脑/阅读桌使用，预留有线网络,planned
-MB-BAL-DATA-2,主卧阳台书桌,1,Cat6A optional,24口配线架,10 Trusted,no,第二台电脑/扩展坞备用；空间或管径受限时可改空管+拉线,optional
-P2S-DATA,储物间/新图衣帽间P2S位,1,Cat6A optional,24口配线架,30 IoT,no,P2S本体可用Wi-Fi；如台面附近方便则保留备用网口,planned
-BAL2-DATA,Balcony2,1,Cat6,24口配线架,30 IoT,no,备用；洗衣机已固定在次卫,planned
-PJ-DATA,客厅投影位置/幕布协调点,1,Cat6,24口配线架,30 IoT,no,按新版平面图幕布位置协调；投影可Wi-Fi；网线备用,planned
-AV-DATA-1,客厅影音柜,1,Cat6,24口配线架,30 IoT,yes,播放器/功放/小交换机,planned
-AV-DATA-2,客厅影音柜,1,Cat6；受限时至少空管+拉线,24口配线架,30 IoT,no,默认保留第二根；无法穿线时至少保留空管,planned
-MAC-HOST,储物间/新图衣帽间主控,1,Cat6A,24口配线架,20 Automation,yes,mini PC/Mac mini Home Assistant主机；需通风和检修,planned
-ZIGBEE-POE,中央走廊开放顶面/高位位置,1,Cat6,24口配线架,20 Automation,yes,PoE/Ethernet Zigbee协调器；网线暗走；顶面/高位明装；不得放金属机柜,planned
-RS485-GW,储物间/新图衣帽间RS-485网关,1,Cat6,24口配线架,20 Automation,yes,4路隔离RS-485网关以太网接入,planned
-ENTRY-H,入户门上方高位,1,Cat6,24口配线架,40 Security,no,PoE摄像头候选；物业和隐私确认后安装,planned
-ENTRY-L,入户门旁低位,1,Cat6优先；至少空管+拉线,24口配线架,40 Security,no,PoE门铃候选；不穿网线也必须可后穿,planned
-NAS-RESERVE,储物间/新图衣帽间NAS预留,1,Cat6A,24口配线架,10 Trusted,no,未来NAS；可先不跳接,optional
+编号,位置,端口数量,线缆类型,终端位置,目标网络,首期跳接,施工备注,状态
+AP1,左侧中央走廊吊顶/可暗线顶面,1,Cat6 或 Cat6A,24口配线架,20 自动化网络,是,PoE 吸顶 AP；暗线出线顶面明装；覆盖书房/儿童房/厨房/衣帽间设备区,已规划
+AP2,客厅边吊/空调出风口附近可施工区域,1,Cat6 或 Cat6A,24口配线架,20 自动化网络,是,PoE 吸顶 AP；客厅无满吊顶时允许偏置；暗线出线顶面明装；覆盖客餐厅/阳台,已规划
+B1-DATA-1,书房办公桌,1,Cat6A,24口配线架,10 可信网络,是,RTX 3090 工作站优先使用,已规划
+B1-DATA-2,书房办公桌,1,Cat6A,24口配线架,10 可信网络,否,扩展坞/NAS/备用,已规划
+B2-DATA-1,儿童房/次卧书桌,1,Cat6A,24口配线架,10 可信网络,是,未来台式机,已规划
+B2-DATA-2,儿童房/次卧书桌,1,Cat6A,24口配线架,10 可信网络,否,备用,已规划
+MB-BAL-DATA-1,主卧阳台书桌,1,Cat6A,24口配线架,10 可信网络,否,主卧阳台如作为电脑/阅读桌使用，预留有线网络,已规划
+MB-BAL-DATA-2,主卧阳台书桌,1,Cat6A 可选,24口配线架,10 可信网络,否,第二台电脑/扩展坞备用；空间或管径受限时可改空管+拉线,可选
+P2S-DATA,衣帽间 P2S 打印位,1,Cat6A 可选,24口配线架,30 物联网网络,否,P2S 本体可用 Wi-Fi；如台面附近方便则保留备用网口,已规划
+BAL2-DATA,客厅阳台,1,Cat6,24口配线架,30 物联网网络,否,备用；洗衣机已固定在次卫,已规划
+PJ-DATA,客厅投影位置/幕布协调点,1,Cat6,24口配线架,30 物联网网络,否,按新版平面图幕布位置协调；投影可用 Wi-Fi；网线备用,已规划
+AV-DATA-1,客厅影音柜,1,Cat6,24口配线架,30 物联网网络,是,播放器/功放/小交换机,已规划
+AV-DATA-2,客厅影音柜,1,Cat6；受限时至少空管+拉线,24口配线架,30 物联网网络,否,默认保留第二根；无法穿线时至少保留空管,已规划
+MAC-HOST,衣帽间主控主机,1,Cat6A,24口配线架,20 自动化网络,是,小主机/Mac mini 智能中控主机；需通风和检修,已规划
+ZIGBEE-POE,中央走廊开放顶面/高位位置,1,Cat6,24口配线架,20 自动化网络,是,PoE/Ethernet Zigbee 协调器；网线暗走；顶面/高位明装；不得放金属机柜,已规划
+RS485-GW,衣帽间 RS-485 网关,1,Cat6,24口配线架,20 自动化网络,是,4 路隔离 RS-485 网关以太网接入,已规划
+ENTRY-H,入户门上方高位,1,Cat6,24口配线架,40 安防网络,否,PoE 摄像头候选；物业和隐私确认后安装,已规划
+ENTRY-L,入户门旁低位,1,Cat6 优先；至少空管+拉线,24口配线架,40 安防网络,否,PoE 门铃候选；不穿网线也必须可后穿,已规划
+NAS-RESERVE,衣帽间 NAS 预留,1,Cat6A,24口配线架,10 可信网络,否,未来 NAS；可先不跳接,可选

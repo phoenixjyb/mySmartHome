@@ -1,20 +1,20 @@
-id,category,room_or_location,protocol_or_network,priority,quantity,status,notes
-HOST-01,controller,Storage room / 新图衣帽间,Ethernet / Automation VLAN,P1,1,planned,mini PC or Mac mini; HAOS/VM; UPS powered
-ROUTER-01,network,Storage room / 新图衣帽间,Ethernet / Management VLAN,P1,1,planned,2.5G capable; VLAN; WireGuard; config backup
-SWITCH-01,network,Storage room / 新图衣帽间,Ethernet / PoE / VLAN,P1,1,planned,16/24 port managed PoE+; 24 port preferred if budget allows
-AP-01,wifi,Left hallway ceiling or hidden-wire ceiling point,PoE Ethernet,P1,1,planned,AP1; surface ceiling mount with hidden cable exit
-AP-02,wifi,Living room side ceiling near AC outlet,PoE Ethernet,P1,1,planned,AP2; offset placement acceptable because living room has no full ceiling; avoid vents/metal/lighting drivers
-ZB-COORD-01,zigbee,Central hallway,PoE Ethernet / Zigbee,P1,1,planned,Ethernet/PoE coordinator for Zigbee2MQTT
-RS485-GW-01,modbus,Storage room / 新图衣帽间,Ethernet + RS-485,P1,1,planned,4 isolated RS-485 channels
-UPS-01,power,Storage room / 新图衣帽间,AC/PDU,P0,1,planned,1000-1500VA; network and automation only
-RACK-01,cabinet,Storage room / 新图衣帽间,physical,P0,1,planned,12U floor network cabinet preferred; no wall reinforcement baseline
-PATCH-01,network,Storage room / 新图衣帽间,passive,P0,1,planned,24-port patch panel
-TH-SENSORS,environment,Whole house,Zigbee,P2,8,planned,temperature/humidity sensors
-WATER-SENSORS,safety,Water points,Zigbee,P2,5-7,planned,leak sensors
-DOOR-SENSORS,security,Entry/balconies/windows,Zigbee,P2,3+,planned,door/window sensors
-PRES-SENSORS,presence,Entry/living/study/bathroom trial,Zigbee/local powered mmWave,P2,3-4,planned,Start with trial locations; do not buy whole-house mmWave sensors at once
-CO2-01,environment,Living room / dining,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for shared space
-CO2-02,environment,Study / 书房,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for office; add master/children room later if closed-door sleeping needs it
-SMOKE-01,safety,Hall/living room,standalone,P2,1,planned,independent alarm
-SMOKE-02,safety,Storage room / 新图衣帽间,standalone,P2,1,planned,independent alarm; optional dry contact
-SMOKE-03,safety,Storage room / 新图衣帽间 P2S area,standalone,P2,1,planned,independent alarm for P2S area
+编号,类别,房间或位置,协议/网络,优先级,数量,状态,备注
+HOST-01,主控,衣帽间,以太网/自动化网络,P1,1,已规划,小主机或 Mac mini；HAOS/虚拟机；接 UPS 供电
+ROUTER-01,网络,衣帽间,以太网/管理网络,P1,1,已规划,支持 2.5G；支持 VLAN；支持 WireGuard；配置可备份
+SWITCH-01,网络,衣帽间,以太网/PoE/VLAN,P1,1,已规划,16/24 口可管理 PoE+；预算允许优先 24 口
+AP-01,无线网络,左侧走廊吊顶/可暗线顶面,PoE 以太网,P1,1,已规划,AP1；暗线出线顶面明装
+AP-02,无线网络,客厅边吊/空调出风口附近可施工区域,PoE 以太网,P1,1,已规划,AP2；客厅无满吊顶时允许偏置；避开风口、金属和灯带驱动
+ZB-COORD-01,Zigbee,中央走廊开放顶面/高位位置,PoE 以太网/Zigbee,P1,1,已规划,PoE/Ethernet Zigbee 协调器，供 Zigbee2MQTT 使用
+RS485-GW-01,RS-485,衣帽间,以太网 + RS-485,P1,1,已规划,4 路隔离 RS-485 通道
+UPS-01,供电,衣帽间,交流电/PDU,P0,1,已规划,1000-1500VA；只带网络和自动化设备
+RACK-01,机柜,衣帽间,实体安装,P0,1,已规划,12U 优先落地网络机柜；不按壁挂加固施工
+PATCH-01,弱电配线,衣帽间,无源配线,P0,1,已规划,24 口配线架
+TH-SENSORS,环境传感器,全屋,Zigbee,P2,8,已规划,温湿度传感器
+WATER-SENSORS,安全传感器,水路点位,Zigbee,P2,5-7,已规划,水浸传感器
+DOOR-SENSORS,安防传感器,入户门/阳台门/窗,Zigbee,P2,3+,已规划,门磁/窗磁
+PRES-SENSORS,存在传感器,入户/客厅/书房/卫生间试点,Zigbee 或本地供电毫米波,P2,3-4,已规划,先做试点，不一次买满全屋毫米波
+CO2-01,环境传感器,客餐厅,ESPHome/LAN 或本地设备,P2,1,已规划,共享空间 CO2 监测
+CO2-02,环境传感器,书房,ESPHome/LAN 或本地设备,P2,1,已规划,办公场景 CO2 监测；主卧/儿童房若经常关门睡觉再增加
+SMOKE-01,安全报警,走廊/客厅,独立报警,P2,1,已规划,独立声光报警
+SMOKE-02,安全报警,衣帽间,独立报警,P2,1,已规划,独立声光报警；可选干接点接入
+SMOKE-03,安全报警,衣帽间 P2S 打印位,独立报警,P2,1,已规划,P2S 打印区独立报警

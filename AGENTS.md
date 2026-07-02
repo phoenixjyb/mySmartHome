@@ -145,6 +145,7 @@ shasum -a 256 -c MANIFEST_SHA256.txt
 ## Editing Conventions
 
 - Preserve Chinese filenames and Chinese document titles.
+- Documents and tables intended for designers, contractors, electricians, weak-current installers, HVAC vendors, or renovation handoff must be written in Chinese. Do not use English room names or English prose in contractor-facing materials. Keep only necessary technical acronyms and product/protocol names such as PoE, RS-485, Zigbee, Cat6A, UPS, PDU, VLAN, SSID, Home Assistant, Modbus, MQTT, ESPHome, Bambu P2S, Mac mini, and RTX 3090 when exact terminology matters.
 - Keep `docs/current/` authoritative and versioned; move superseded drafts to `docs/archive/` only when the user asks for a package refresh.
 - Keep construction-facing documents practical: contractor checklists, exact room names, wire counts, conduit requirements, and site-confirmation items matter more than abstract smart-home theory.
 - When adding or changing diagrams, edit `diagrams/sources/*.dot` first and regenerate SVG/PNG outputs consistently.

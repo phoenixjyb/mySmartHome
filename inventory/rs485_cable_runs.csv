@@ -1,8 +1,8 @@
-id,port,system,from,to,topology,plan_distance_estimate_m,construction_length_estimate_m,recommended_reserve_m,status,notes
-RS485-P1A,1,Hitachi VRF,Storage room / 新图衣帽间 RS-485 gateway,Hitachi converter near storage room,point-to-point dedicated RS-485,1-2,1-3,5,preferred_if_vendor_allows,"Best case if Hitachi converter can be installed in or near storage room; requires vendor confirmation"
-RS485-P1B,1,Hitachi VRF,Storage room / 新图衣帽间 RS-485 gateway,Hitachi converter at central ceiling/service hatch,point-to-point dedicated RS-485,3-5,6-9,12,planned_baseline,"Baseline reserve to central corridor/bathroom service zone; do not share conduit with humidifier"
-RS485-P1C,1,Hitachi VRF,Storage room / 新图衣帽间 RS-485 gateway,Hitachi converter at far-right equipment/balcony zone,point-to-point dedicated RS-485,8-10,10-14,18,contingency,"Use only if Hitachi requires converter at far equipment area"
-RS485-P2A,2,Gen humidifier,Storage room / 新图衣帽间 RS-485 gateway,Gen controller near storage/kitchen/bathroom service zone,point-to-point dedicated RS-485,3-6,5-9,12,planned_baseline,"Confirm controller/mainboard location with Gen vendor"
-RS485-P2B,2,Gen humidifier,Storage room / 新图衣帽间 RS-485 gateway,Gen controller at far-right/Balcony2 equipment zone,point-to-point dedicated RS-485,8-10,10-15,18,contingency,"Use if humidifier controller is placed at far equipment area"
-RS485-P3,3,Future meter/water valve,Storage room / 新图衣帽间 RS-485 gateway,Kitchen/entry/water-equipment reserve,empty conduit reserve,3-7,5-10,12,reserve,"Reserve conduit and pull string first; final device TBD"
-RS485-P4,4,Future Daikin/other,Storage room / 新图衣帽间 RS-485 gateway,TBD central or far equipment area,empty conduit reserve,8-10,10-15,18-20,reserve,"Reserve conduit and pull string; final equipment TBD"
+编号,端口,系统,起点,终点,拓扑,平面直线估算米数,施工路径估算米数,建议预留米数,状态,备注
+RS485-P1A,1,日立多联机,衣帽间 RS-485 网关,日立转换器靠近衣帽间,点对点独立 RS-485,1-2,1-3,5,厂家允许时优先,"如果日立允许转换器装在衣帽间或附近，这是最短路径；仍需厂家确认"
+RS485-P1B,1,日立多联机,衣帽间 RS-485 网关,日立转换器在中部吊顶/检修口,点对点独立 RS-485,3-5,6-9,12,规划基线,"按中部走廊/卫生间服务区预留；不得与加湿器共管"
+RS485-P1C,1,日立多联机,衣帽间 RS-485 网关,日立转换器在右侧远端设备区/阳台附近,点对点独立 RS-485,8-10,10-14,18,兜底方案,"仅在日立要求转换器放远端设备区时使用"
+RS485-P2A,2,格恩中央加湿,衣帽间 RS-485 网关,格恩控制器在衣帽间/厨房/卫生间服务区附近,点对点独立 RS-485,3-6,5-9,12,规划基线,"控制器/主板位置需格恩厂家确认"
+RS485-P2B,2,格恩中央加湿,衣帽间 RS-485 网关,格恩控制器在右侧远端设备区/客厅阳台附近,点对点独立 RS-485,8-10,10-15,18,兜底方案,"如果加湿控制器放远端设备区，使用此预留"
+RS485-P3,3,未来电表/水阀,衣帽间 RS-485 网关,厨房/入户/水路设备预留位置,空管预留,3-7,5-10,12,预留,"先预留空管和拉线；最终设备待定"
+RS485-P4,4,未来大金/其他设备,衣帽间 RS-485 网关,中部或远端设备区待定,空管预留,8-10,10-15,18-20,预留,"先预留空管和拉线；最终设备待定"
