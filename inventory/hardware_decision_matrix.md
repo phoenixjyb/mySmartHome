@@ -10,7 +10,7 @@
 | 主控 | mini PC / Mac mini，16GB RAM，NVMe SSD | Raspberry Pi 5 + NVMe 作为实验/备份 | microSD Pi 长期主控、Home Assistant Green 作为长期平台 |
 | 网络生态 | TP-Link Omada 优先评估 | UniFi；OpenWrt/OPNsense + 独立交换机/AP | 只能云管、不能导出配置的方案 |
 | 交换机 | 24 口可管理 PoE+ 优先；16 口为最低 | Omada SG3218XP-M2 类、UniFi Pro Max 16 PoE 类 | 不支持 VLAN/PoE 管理的普通交换机 |
-| AP | 2 台吸顶 Wi-Fi 6/7，PoE+，2.5G uplink | AP3 仅预留 | 无线 Mesh 主回程 |
+| AP | 2 台吸顶 Wi-Fi 6/7，PoE+，2.5G uplink | 后期实测再决定是否补有线 AP | 无线 Mesh 主回程；本轮不预留 AP-R/AP3 |
 | Zigbee | Ethernet/PoE coordinator | USB dongle 仅实验/备用 | 协调器放金属机柜内 |
 | RS-485 | 4 路隔离型 RS-485 to Ethernet 网关 | 2 路网关但预留扩展 | 日立和格恩共用一条总线 |
 | UPS | 1000-1500VA，网络/主控/网关专用 | 更大容量但仍只带弱电设备 | 给 3090/P2S 供电 |
@@ -93,7 +93,7 @@
 
 - AP1：左侧中央走廊；
 - AP2：客厅边吊/空调出风口附近可施工区域，允许偏置；
-- AP3：只留空管/备用线。
+- AP-R/AP3：本轮取消，不预留空管或备用线。
 
 客厅 AP2 不强求几何正中心。新版方案里客厅只有贴近空调出风口和墙边立柜的局部吊顶/可暗线区域，优先保证暗线出线、顶面明装、开放可维护，并避开金属风管、出风口、灯带驱动和投影幕盒。
 

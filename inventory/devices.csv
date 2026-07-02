@@ -12,9 +12,9 @@ PATCH-01,network,Storage room / 新图衣帽间,passive,P0,1,planned,24-port pat
 TH-SENSORS,environment,Whole house,Zigbee,P2,8,planned,temperature/humidity sensors
 WATER-SENSORS,safety,Water points,Zigbee,P2,5-7,planned,leak sensors
 DOOR-SENSORS,security,Entry/balconies/windows,Zigbee,P2,3+,planned,door/window sensors
-PRES-SENSORS,presence,Main rooms,Zigbee,P2,7-8,planned,PIR/mmWave depending room
-CO2-01,environment,Living room,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring
-CO2-02,environment,Bedroom1,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for office
+PRES-SENSORS,presence,Entry/living/study/bathroom trial,Zigbee/local powered mmWave,P2,3-4,planned,Start with trial locations; do not buy whole-house mmWave sensors at once
+CO2-01,environment,Living room / dining,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for shared space
+CO2-02,environment,Study / 书房,ESPHome/LAN or local device,P2,1,planned,CO2 monitoring for office; add master/children room later if closed-door sleeping needs it
 SMOKE-01,safety,Hall/living room,standalone,P2,1,planned,independent alarm
 SMOKE-02,safety,Storage room / 新图衣帽间,standalone,P2,1,planned,independent alarm; optional dry contact
 SMOKE-03,safety,Storage room / 新图衣帽间 P2S area,standalone,P2,1,planned,independent alarm for P2S area
