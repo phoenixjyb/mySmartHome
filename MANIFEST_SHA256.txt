@@ -1,8 +1,8 @@
 2de5c6899062e18e847d4d7044c7e4cb6c9881fdd367782bba8f9238b27c21c8  ./.gitignore
 d6b6515171a7dcac0b7a641ee8269a3a2af7e9245e702d5173a94dbb8aa56bca  ./AGENTS.md
-84efa089da7ab55a01c0601cdf24cc22e87b93a02a34bff8bbcad37200dd6759  ./CHANGELOG.md
-a474780cdfb7ef9f1c9cfd825b0b9dab62e1eeecef3fff95b7b87adc729ae6f0  ./PROJECT_TREE.md
-db010b8d7f6968bb7ca2500fd79cde012a8d5503ad5180277dc569f41d85f4f4  ./README.md
+a106c7dd5017fa83f6e2e69ef32bcbc637e77cb35863500cc631e64db3f23bab  ./CHANGELOG.md
+dccd9301bbba8db57711c7c108de04825116b4737d36dd0de2fab25c480f87d2  ./PROJECT_TREE.md
+5581e473fb70a6c3c9157034dfcbdd069610d79cfc20ec056269327ad4385557  ./README.md
 9f55d38a2f8a32b277f27c34afdc365b48dbcc9fb1c89899c04fc0901bd05bbc  ./commissioning/README.md
 4fa6b601ff2e77c89864bb3ef5b1d61124a17ea6f9875983a6ff8676ef99ee4d  ./config/home-assistant/hitachi/README.md
 bd2a1613fecad67ffde751ba6096f750361a4a8086d5ea521a3c3acd1f566f2e  ./config/home-assistant/hitachi/hitachi_modbus_readonly.yaml.example
@@ -51,6 +51,7 @@ de39b0cf46294c5a7ad2d44a45d2def21f3ecf2f473aa9d594b30d05a69b264e  ./docs/current
 4704111ee9c3aa603087678624e9c1e7d1ec015460a044fa680c5aba0a410a27  ./docs/current/日立室内机房间映射表.md
 39866d39d149a64df654e91e7a3439154c47627057d4c9a64f51a11556ac29ee  ./docs/current/架构审计与首期硬件清单_V1.md
 4e6e0afe1f1c79484b8dbd3ab695bb51bc794e9c374a715806209effe0b5ada4  ./docs/current/用电功率与插座点位复核_V1.md
+d8f37a7be3c9166109e5bfeb66c297460a1f5a5309f73464094adaf995d13f2a  ./docs/current/给设计师的点位落图输入_V1.md
 a84145a5d163ab470a39c6ebfb81b3df8907d0dba7ebcb73bf4f39fd14c44583  ./docs/current/网络与智能家居方案_早期图纸版.pdf
 b63c512398df05270596ff64260e92a795b073ea47dffd78212bd64265bca6f8  ./docs/current/装修施工交底_网络与智能家居_V2.1.md
 091720e4538a97f37a0992b6f99637936d5569e9f0a6478c107eeed110f603ec  ./docs/current/装修队施工交底清单_V1.md
