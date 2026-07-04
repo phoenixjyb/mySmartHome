@@ -32,6 +32,8 @@
 - `references/日立中央空调/`：日立 Modbus 点表原件。
 - `references/格恩通信协议列表格式-液晶控制器.xlsx`：格恩中央加湿协议原件。
 - `references/newFloorPlan.png`：新版平面布置图，作为后续点位重排依据。
+- `exports/设计师沟通包_2026-07-05.docx`：给设计师直接阅读/转发的 Word 合并版。
+- `exports/明日设计师沟通要点_2026-07-05.docx`、`exports/给设计师的点位落图输入_V1.docx`、`exports/设计师点位参考方案_V1.docx`、`exports/明日设计师点位图套件_2026-07-05.docx`：由对应 Markdown 生成的拆分 Word 版本。
 - `software/`、`inventory/`、`commissioning/`、`external/`：后续自研软件、设备清单、现场验收和外部依赖管理工作区。
 - `inventory/`：首期采购候选、硬件决策矩阵、装修队布线清单、网络端口、功率/插座点位、IP/VLAN、RS-485 通道/线长和设备清单。
 

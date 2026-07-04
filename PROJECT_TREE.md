@@ -50,6 +50,12 @@ smartHouse/
 │   └── devices.csv
 ├── commissioning/README.md
 ├── external/README.md
+├── exports/
+│   ├── 设计师沟通包_2026-07-05.docx
+│   ├── 明日设计师沟通要点_2026-07-05.docx
+│   ├── 给设计师的点位落图输入_V1.docx
+│   ├── 设计师点位参考方案_V1.docx
+│   └── 明日设计师点位图套件_2026-07-05.docx
 ├── references/
 │   ├── newFloorPlan.png
 │   ├── 日立中央空调/*.pdf
