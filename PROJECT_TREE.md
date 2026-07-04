@@ -14,6 +14,7 @@ smartHouse/
 │   ├── 首期硬件型号与购买链接建议_V1.md
 │   ├── 传感器分类与取舍决策_V1.md
 │   ├── 明日设计师沟通要点_2026-07-05.md
+│   ├── 明日设计师点位图套件_2026-07-05.md
 │   ├── 设计师点位参考方案_V1.md
 │   ├── 给设计师的点位落图输入_V1.md
 │   ├── 周末设计师点位图制作基准与优先级_V1.md
@@ -29,6 +30,9 @@ smartHouse/
 │   └── secrets.yaml.example
 ├── diagrams/
 │   ├── 01…08 PNG/SVG
+│   ├── 09_设计师点位图_弱电网络.png
+│   ├── 10_设计师点位图_强电固定设备.png
+│   ├── 11_设计师点位图_智能安全_RS485.png
 │   └── sources/*.dot
 ├── software/
 │   ├── smarthouse-core/README.md
