@@ -25,7 +25,7 @@
 <text x="1705.0" y="291.0" font-size="16" text-anchor="middle" fill="#102A43">独立RS-485</text>
 <line x1="1420" y1="175" x2="1540" y2="275.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
 <rect x="1540" y="370" width="330" height="90" rx="18" fill="#F2F4F7" stroke="#8A94A6" stroke-width="3" stroke-dasharray="10 8"/>
-<text x="1705.0" y="408.0" font-size="16" text-anchor="middle" fill="#102A43">Port 3：未来水表/总水阀</text>
+<text x="1705.0" y="408.0" font-size="16" text-anchor="middle" fill="#102A43">Port 3：未来电表/水表/计量设备</text>
 <text x="1705.0" y="431.0" font-size="16" text-anchor="middle" fill="#102A43">空管+拉线</text>
 <line x1="1420" y1="175" x2="1540" y2="415.0" stroke="#52606D" stroke-width="4" marker-end="url(#arrow)"/>
 <rect x="1540" y="510" width="330" height="90" rx="18" fill="#F2F4F7" stroke="#8A94A6" stroke-width="3" stroke-dasharray="10 8"/>

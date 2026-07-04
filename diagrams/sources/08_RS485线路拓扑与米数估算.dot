@@ -31,7 +31,7 @@ digraph G {
 
   p1 [label="Port 1：日立\n独立RS-485通道", fillcolor="#FCE8E6", color="#C33A3A", penwidth=2];
   p2 [label="Port 2：格恩中央加湿\n独立RS-485通道", fillcolor="#EAF6ED", color="#2E8B57", penwidth=2];
-  p3 [label="Port 3：未来水表/总水阀\n空管+拉线预留", fillcolor="#F2F4F7", style="rounded,dashed"];
+  p3 [label="Port 3：未来 Modbus 电表/水表/计量设备\n空管+拉线预留", fillcolor="#F2F4F7", style="rounded,dashed"];
   p4 [label="Port 4：未来大金/其他设备\n空管+拉线预留", fillcolor="#F2F4F7", style="rounded,dashed"];
 
   hitachi_near [label="日立转换器靠近储物间\n建议预留 5 m", fillcolor="#FFF8F5"];
