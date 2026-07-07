@@ -57,16 +57,16 @@ def add_heading(doc: Document, text: str, level: int = 1):
 
 def add_bullet(doc: Document, text: str) -> None:
     p = doc.add_paragraph(style="List Bullet")
-    p.paragraph_format.space_after = Pt(3)
+    p.paragraph_format.space_after = Pt(2)
     run = p.add_run(text)
-    set_run_font(run, 10.5)
+    set_run_font(run, 9.8)
 
 
 def add_number(doc: Document, text: str) -> None:
     p = doc.add_paragraph(style="List Number")
     p.paragraph_format.space_after = Pt(2)
     run = p.add_run(text)
-    set_run_font(run, 10.2)
+    set_run_font(run, 9.8)
 
 
 def build() -> None:
@@ -83,8 +83,8 @@ def build() -> None:
     set_style_font(doc.styles["Normal"], 10.5)
     set_style_font(doc.styles["Heading 1"], 15, BLUE, True)
     set_style_font(doc.styles["Heading 2"], 12.5, BLUE, True)
-    set_style_font(doc.styles["List Bullet"], 10.5)
-    set_style_font(doc.styles["List Number"], 10.2)
+    set_style_font(doc.styles["List Bullet"], 9.8)
+    set_style_font(doc.styles["List Number"], 9.8)
 
     title = doc.add_paragraph()
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -136,6 +136,17 @@ def build() -> None:
     for item in items:
         add_number(doc, item)
 
+    add_heading(doc, "线材和管线要求", 2)
+    for item in [
+        "新增网络点、AP、PoE Zigbee、影音柜、书房、次卧/儿童房、主卧阳台：统一用 Cat6A 网线，不要求七类线。",
+        "AP1/AP2、PoE Zigbee：每个点 1 根 Cat6A 直回衣帽间机柜/交换机侧，中途不要接驳。",
+        "RS-485：日立空调、中央加湿各自独立管线回衣帽间；可用 Cat6A 或屏蔽双绞线作为 485 线，A/B 使用同一对双绞线。",
+        "强电 220V 与网线/RS-485 必须分管分槽；如需交叉，尽量 90 度交叉。",
+        "所有暗管预留穿线绳；线缆两端贴标签；封槽、封吊顶、封柜前拍照留档。",
+        "管径和弯头要保证后续可抽换，重点是 AP、PoE Zigbee、影音柜和衣帽间机柜回线。",
+    ]:
+        add_bullet(doc, item)
+
     add_heading(doc, "本轮明确不要施工", 2)
     for item in [
         "入户高位摄像头 / 低位门铃。",
@@ -146,7 +157,9 @@ def build() -> None:
     ]:
         add_bullet(doc, item)
 
-    add_heading(doc, "建议今天发送的材料", 2)
+    doc.add_page_break()
+
+    add_heading(doc, "建议今天发送的材料", 1)
     table = doc.add_table(rows=3, cols=2)
     table.style = "Table Grid"
     table.autofit = False
