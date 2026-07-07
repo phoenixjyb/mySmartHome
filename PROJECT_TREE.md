@@ -68,5 +68,6 @@ smartHouse/
 │   └── 格恩通信协议列表格式-液晶控制器.xlsx
 └── scripts/
     ├── copy_to_projects.sh
+    ├── generate_contractor_electrical_overlays.py
     └── generate_hitachi_ha_yaml.py
 ```

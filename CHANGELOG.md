@@ -3,8 +3,9 @@
 ## 施工队强弱电简版确认图 - 2026-07-07
 
 - 新增 `references/designer-input/强弱电点位图-original.png` 和 `references/designer-input/图例.png`，保存设计师当前强弱电图和图例作为叠图底稿。
-- 新增 `diagrams/12_强弱电点位图_业主必要标注.png` 和 `diagrams/13_强弱电点位图_施工队简版.png`，只标注施工队/设计师必须确认的 12 个编号点位和本轮不施工项。
+- 新增 `diagrams/12_强弱电点位图_业主必要标注.png` 和 `diagrams/13_强弱电点位图_施工队简版.png`，只标注施工队/设计师必须确认的编号点位和本轮不施工项；M10 仅示意 RS-485 两端，M11 拆分为次卫洗衣和厨下/总水阀。
 - 新增 `docs/current/装修队强弱电必要确认_2026-07-07.md`，避免把长篇架构文档发给装修队。
+- 新增 `scripts/generate_contractor_electrical_overlays.py`，后续可从设计师原图重复生成叠图。
 
 ## 设计师沟通 Word 版本 - 2026-07-05
 

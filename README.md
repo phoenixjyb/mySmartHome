@@ -32,6 +32,7 @@
 - `references/designer-input/`：设计师提供的强弱电原图和图例。
 - `config/home-assistant/hitachi/`：只读调试 YAML 和 secrets 示例。
 - `scripts/generate_hitachi_ha_yaml.py`：按室内机数量生成只读 YAML。
+- `scripts/generate_contractor_electrical_overlays.py`：基于设计师强弱电原图重新生成施工队简版和详细标注版 PNG。
 - `references/日立中央空调/`：日立 Modbus 点表原件。
 - `references/格恩通信协议列表格式-液晶控制器.xlsx`：格恩中央加湿协议原件。
 - `references/newFloorPlan.png`：新版平面布置图，作为后续点位重排依据。
