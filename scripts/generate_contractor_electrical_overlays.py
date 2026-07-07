@@ -44,6 +44,7 @@ F_BODY = font(27)
 F_SMALL = font(22)
 F_MARKER = font(24)
 F_MARKER_SMALL = font(20)
+F_MARKER_TINY = font(17)
 
 
 def text_size(draw: ImageDraw.ImageDraw, text: str, fnt: ImageFont.ImageFont) -> tuple[int, int]:
@@ -95,7 +96,13 @@ def marker(
     small: bool = False,
 ) -> None:
     draw.ellipse((x - r, y - r, x + r, y + r), fill=color, outline="white", width=4)
-    fnt = F_MARKER_SMALL if small else F_MARKER
+    candidates = [F_MARKER_TINY, F_MARKER_SMALL] if small else [F_MARKER, F_MARKER_SMALL, F_MARKER_TINY]
+    fnt = candidates[-1]
+    for candidate in candidates:
+        tw, th = text_size(draw, label, candidate)
+        if tw <= r * 1.55 and th <= r * 1.2:
+            fnt = candidate
+            break
     tw, th = text_size(draw, label, fnt)
     draw.text((x - tw / 2, y - th / 2 - 1), label, font=fnt, fill="white")
 
@@ -161,15 +168,15 @@ def draw_side_panel(draw: ImageDraw.ImageDraw, start_x: int, h: int, simple: boo
         ("M6", COLORS["network"], "次卧/儿童房：2 网口 + 插座"),
         ("M7", COLORS["network"], "主卧阳台：至少 1 网口 + 插座"),
         ("M8", COLORS["network"], "影音柜：1 网口 + 多位插座"),
-        ("M9", COLORS["power"], "投影/幕布：投影电源 + 影音管；幕布只 220V"),
+        ("M9", COLORS["power"], "短焦投影：不留顶面投影电源；影音柜/幕布盒预留电源/管线"),
         ("M10", COLORS["rs485"], "RS-485：从衣帽间机柜预留到空调/加湿接入点；图中仅示意两端"),
-        ("M11a/b", COLORS["water"], "次卫洗衣 + 厨下/总水阀：水电可检修"),
+        ("M11", COLORS["water"], "M11A 次卫洗衣；M11B 厨下/总水阀：水电可检修"),
         ("M12", COLORS["curtain"], "窗帘盒：每组电机侧 220V 常电"),
     ]
     for label, color, text in items:
-        marker(draw, x + 18, y + 17, label, color, r=18, small=len(label) > 3)
-        for line in wrap_by_width(draw, text, F_BODY, 500):
-            draw.text((x + 58, y), line, font=F_BODY, fill=COLORS["ink"])
+        marker(draw, x + 24, y + 19, label, color, r=22, small=len(label) > 3)
+        for line in wrap_by_width(draw, text, F_BODY, 450):
+            draw.text((x + 68, y), line, font=F_BODY, fill=COLORS["ink"])
             y += 32
         y += 11
 
@@ -209,8 +216,8 @@ def draw_common_markers(draw: ImageDraw.ImageDraw, detailed: bool) -> None:
     marker(draw, 1535, 425, "M10", COLORS["rs485"])
 
     # Red: split wet-area checks.
-    marker(draw, 1455, 505, "M11a", COLORS["water"], r=30, small=True)
-    marker(draw, 655, 832, "M11b", COLORS["water"], r=30, small=True)
+    marker(draw, 1455, 505, "M11A", COLORS["water"], r=31, small=True)
+    marker(draw, 655, 832, "M11B", COLORS["water"], r=31, small=True)
 
     # Green: curtain motor power. Multiple markers share one requirement.
     for x, y in [(825, 132), (520, 520), (2185, 248), (2250, 885)]:
@@ -221,6 +228,8 @@ def draw_common_markers(draw: ImageDraw.ImageDraw, detailed: bool) -> None:
     draw.line((1055, 700, 1005, 750), fill=COLORS["skip"], width=5)
     draw.line((1010, 865, 1060, 915), fill=COLORS["skip"], width=5)
     draw.line((1060, 865, 1010, 915), fill=COLORS["skip"], width=5)
+    draw.line((1792, 884, 1845, 937), fill=COLORS["skip"], width=5)
+    draw.line((1845, 884, 1792, 937), fill=COLORS["skip"], width=5)
 
     if detailed:
         note_box(draw, 355, 440, "M5 书房桌位：2网口 + 工作站插座", COLORS["network"], target=(650, 520))
@@ -229,14 +238,15 @@ def draw_common_markers(draw: ImageDraw.ImageDraw, detailed: bool) -> None:
         note_box(draw, 970, 545, "M3a AP1：走廊顶面 PoE 网线", COLORS["network"], target=(1255, 610))
         note_box(draw, 1985, 650, "M3b AP2：客厅顶面 PoE 网线", COLORS["network"], target=(1900, 705))
         note_box(draw, 1660, 960, "M8 影音柜：首期1网口 + 多位插座", COLORS["network"], target=(1860, 900))
-        note_box(draw, 2055, 930, "M9 投影电源 + 影音管；幕布盒只220V", COLORS["power"], target=(2038, 860))
+        note_box(draw, 2055, 930, "M9 短焦投影：不留顶面投影电源；影音柜/幕布盒预留电源/管线", COLORS["power"], target=(2038, 860))
         note_box(draw, 1288, 770, "M1 衣帽间机柜/UPS/交换机/弱电汇聚", COLORS["power"], max_width=330, target=(1265, 840))
         note_box(draw, 850, 955, "M2 P2S 独立插座；不接机柜UPS/PDU", COLORS["power"], max_width=350, target=(1120, 910))
         note_box(draw, 1510, 360, "M10 设备侧：RS-485接入点候选", COLORS["rs485"], target=(1535, 425))
-        note_box(draw, 1515, 515, "M11a 次卫洗衣：防潮插座/排水/水浸低位", COLORS["water"], max_width=360, target=(1455, 505))
-        note_box(draw, 420, 920, "M11b 厨下净水/总水阀：插座和检修空间", COLORS["water"], max_width=350, target=(655, 832))
+        note_box(draw, 1515, 515, "M11A 次卫洗衣：防潮插座/排水/水浸低位", COLORS["water"], max_width=360, target=(1455, 505))
+        note_box(draw, 420, 920, "M11B 厨下净水/总水阀：插座和检修空间", COLORS["water"], max_width=350, target=(655, 832))
         note_box(draw, 2300, 790, "M12 窗帘盒：电机侧220V常电，单层窗帘", COLORS["curtain"], max_width=350, target=(2250, 885))
         note_box(draw, 1015, 660, "入户摄像头/门铃不做\nP2S不留墙网口", COLORS["skip"], max_width=250)
+        note_box(draw, 1708, 835, "短焦投影不做顶面吊装电源", COLORS["skip"], max_width=280)
 
 
 def draw_simple_overlays(draw: ImageDraw.ImageDraw) -> None:
