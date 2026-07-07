@@ -55,6 +55,7 @@ smartHouse/
 ├── external/README.md
 ├── exports/
 │   ├── 设计师沟通包_2026-07-05.docx
+│   ├── 装修队强弱电必要确认_2026-07-07.docx
 │   ├── 明日设计师沟通要点_2026-07-05.docx
 │   ├── 给设计师的点位落图输入_V1.docx
 │   ├── 设计师点位参考方案_V1.docx
@@ -69,5 +70,6 @@ smartHouse/
 └── scripts/
     ├── copy_to_projects.sh
     ├── generate_contractor_electrical_overlays.py
+    ├── generate_contractor_handoff_docx.py
     └── generate_hitachi_ha_yaml.py
 ```

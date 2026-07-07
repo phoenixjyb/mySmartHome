@@ -7,6 +7,7 @@
 - 新增 `docs/current/装修队强弱电必要确认_2026-07-07.md`，避免把长篇架构文档发给装修队。
 - 新增 `scripts/generate_contractor_electrical_overlays.py`，后续可从设计师原图重复生成叠图。
 - 修正短焦投影说明：不再要求顶面投影仪电源，并放大/缩短图例圆圈编号，避免文字显示不全。
+- 新增 `exports/装修队强弱电必要确认_2026-07-07.docx` 和生成脚本 `scripts/generate_contractor_handoff_docx.py`；7 月 5 日旧 Word 包保留为档案，不作为今天施工交底主材料。
 
 ## 设计师沟通 Word 版本 - 2026-07-05
 
