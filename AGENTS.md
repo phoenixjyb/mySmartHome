@@ -1,188 +1,48 @@
-# AGENTS.md
+# SmartHouse
 
-Guidance for Codex or other coding/design agents working in this project.
+This repository covers renovation handoff, network/low-voltage design, Home
+Assistant and HVAC/Modbus integration. Preserve the wired backbone, local control,
+manufacturer controllers and independent critical safety functions.
 
-## Project Scope
+## Read for the task
 
-This is a smart-home and renovation planning package for an approximately 100 m2 apartment with three bedrooms, one living room, one kitchen, two bathrooms, and two balconies.
+- Current package/version: `README.md`; `PROJECT_TREE.md` for inventory.
+- Architecture and construction: relevant documents in `docs/current/`.
+  The V3.2 architecture wins over V2.1 construction where those baselines conflict.
+- Room/device decisions, protocol evidence or commissioning: the relevant section
+  of [design-and-commissioning.md](docs/agent-reference/design-and-commissioning.md).
+- Hardware/ports/cables: `inventory/`; diagrams: `diagrams/架构图索引.md` and
+  `diagrams/sources/`; read-only HA examples: `config/home-assistant/hitachi/`.
 
-The project is not only software. It combines renovation construction handoff, network and low-voltage wiring, Home Assistant architecture, Zigbee sensor planning, HVAC/humidifier Modbus integration, diagrams, reference PDFs/images, and vendor protocol evidence.
+Treat `docs/archive/` as historical. Do not reopen resolved decisions or move
+files into archives unless the task calls for it. Verify Git identity rather
+than assuming this is still a non-Git package.
 
-The current phase is planning and design. Once the design is stable, this repository is expected to grow into the implementation home for a self-built smart-home system: Home Assistant configuration, local adapters, Modbus tooling, dashboards, automations, tests, deployment notes, and operating runbooks.
+## Preserve these boundaries
 
-The current design direction is:
+- Contractor, designer and site-handoff materials use Chinese room names and prose.
+  Preserve Chinese filenames and necessary product/protocol terms.
+- RS-485 presence does not prove Modbus compatibility. Confirm register map,
+  addressing, serial settings, function codes and controller priority before live use.
+  Keep Hitachi HVAC and humidifier buses on separate isolated channels unless
+  vendor-backed compatibility has been established.
+- Hitachi commissioning starts with confirmed wiring/protocol, `4998=1`, unit
+  enumeration and room mapping. Writes need task authority and readback. Do not
+  auto-write `4999`, expose batch shutdown `4004` as a normal control, or write
+  ambiguous `B+85`/`B+87` controls before vendor confirmation.
+- Do not cut power to HVAC, humidifiers or gas water heaters through smart plugs.
+  Keep critical safety independent of HA/cloud, and admin endpoints off public ingress.
+- Keep examples read-only and placeholders explicit. Do not invent final site
+  addresses or credentials. Live controls and configuration changes require the
+  corresponding task authority.
 
-- Wired backbone, wireless endpoints.
-- Local-first control where practical.
-- Original manufacturer controllers remain available.
-- Critical safety functions must not depend on Home Assistant, cloud services, or one vendor platform.
-- The owner manages the system directly.
+## Complete the artifact
 
-## Source Of Truth
+Update only affected documents/configuration and their relevant cross-references.
+For diagrams, edit `.dot` sources then regenerate and inspect the affected output.
+For generated packages, check the applicable manifest; a small prose edit does
+not require a whole bundle rebuild. Site wiring, protocol reads, writes and
+long-term operation are distinct acceptance evidence.
 
-Use these files first:
-
-- `README.md` for the current package summary and version conventions.
-- `PROJECT_TREE.md` for package inventory.
-- `CHANGELOG.md` for what changed in the V3.2 bundle.
-- `docs/current/全屋智能系统总体架构_V3.2.md` as the main architecture baseline.
-- `docs/current/装修施工交底_网络与智能家居_V2.1.md` as the construction handoff baseline. If it conflicts with V3.2 architecture, V3.2 wins.
-- `docs/current/日立中央空调_Modbus接入与调试_V1.md` for Hitachi Modbus commissioning.
-- `docs/current/日立室内机房间映射表.md` for site mapping during HVAC commissioning.
-- `docs/current/开源平台选型与自研边界_V1.md` for open-source platform adoption versus self-built boundaries.
-- `docs/current/实施路线图与仓库结构_V1.md` for phases, repo structure, and submodule policy.
-- `docs/current/架构审计与首期硬件清单_V1.md` for current architecture audit and initial hardware choices.
-- `docs/current/装修队施工交底清单_V1.md` for contractor-facing wiring, conduit, photo, and acceptance requirements.
-- `docs/current/设计师发送前点位复核_V1.md` for pre-send ambiguity checks and points that must be drawn into designer/contractor plans.
-- `docs/current/用电功率与插座点位复核_V1.md` for power-load, socket-position, UPS-boundary, and smart-plug control-boundary checks.
-- `docs/current/RS485线路拓扑与米数估算_V1.md` for RS-485 topology, separate conduit routing, and cable-length estimates.
-- `inventory/` for initial hardware purchase candidates, network ports, VLAN/IP plan, RS-485 channels, and device inventory.
-- `config/home-assistant/hitachi/` for read-only Home Assistant examples.
-- `diagrams/架构图索引.md` and `diagrams/sources/*.dot` for diagram maintenance.
-
-Treat `docs/archive/` as historical only. Do not revive archived decisions unless the user explicitly asks to compare or restore an older plan.
-
-## Current Baseline
-
-- `Bedroom1` is the office and RTX 3090 workstation room; keep two Cat6A drops.
-- `Bedroom2` may contain another desktop; keep two Cat6A drops.
-- `Bedroom3` has no fixed network port; use Wi-Fi/Zigbee sensors.
-- `Storage room` maps to the `衣帽间` area on `references/newFloorPlan.png`. It is the network and automation equipment room: rack/cabinet, ONT, router/firewall, managed PoE switch, patch panel, Mac mini, UPS, Zigbee coordinator network path, and RS-485 gateways.
-- `次卫生间` is the confirmed washing-machine area; update water-leak, socket, drain, and wet-area electrical checks around this room rather than assuming washing on a balcony.
-- The living-room projector should be coordinated with the screen/幕布 position shown on `references/newFloorPlan.png`.
-- Bambu P2S is now confirmed in the storage room/衣帽间. Treat it as a normal enclosed FDM printer with internal filtering, not as a resin printer or industrial machine. For PLA/PETG, external exhaust is not mandatory, but reserve ventilation/exhaust options for ABS/ASA/PC or odor/heat control.
-- `Balcony2` keeps one spare network port only as a reserve unless a future water device is installed there.
-- In the storage room/衣帽间, keep the P2S on its own shelf/bay with clear access for the door, AMS, filament changes, poop chute, maintenance, and cleaning. Do not share the rack UPS/PDU; keep it physically separated from network rack, UPS, clothes, paper boxes, and solvents/glue. Add smoke alarm and temperature monitoring; optional VOC/PM monitoring is useful but not a construction blocker.
-- Use two wired ceiling APs initially. A third AP is only a conduit/reserve option.
-- Use a 16-port managed PoE+ switch with a 24-port passive patch panel for expansion.
-- Use a PoE/Ethernet Zigbee coordinator in an open central hallway location, not inside a metal rack.
-
-## Network And Platform Architecture
-
-Expected stack:
-
-- Independent router/firewall.
-- 16-port managed PoE+ switch, ideally with some 2.5GbE and optional 10G/SFP+.
-- Mac mini running Home Assistant OS VM for the first stage.
-- Home Assistant, Mosquitto MQTT, Zigbee2MQTT, ESPHome, and optional Node-RED.
-- WireGuard for remote access.
-- VLAN/SSID split: Trusted, Automation, IoT, Security, Guest, Management.
-
-Do not propose exposing Home Assistant, cameras, or router admin directly to the public internet.
-
-## Modbus And HVAC Rules
-
-Do not treat "has RS-485" as proof of integration. Require protocol-level evidence:
-
-- Is it actually Modbus RTU/TCP or a proprietary protocol?
-- Full register table.
-- Baud rate, data bits, parity, stop bits.
-- Slave address and whether it is configurable.
-- Function codes for reads and writes.
-- Whether addresses are 0-based or 1-based in the actual tool/gateway.
-- Read-only versus writable registers.
-- Interaction priority with original wall controller/app.
-- Warranty and support impact of third-party integration.
-
-Keep different RS-485 systems on separate isolated channels by default. The current split is:
-
-- Port 1: Hitachi Modbus/MiniModbus converter. Point table exists, but converter model, serial settings, slave address, function codes, and address offset still require manual/vendor/site confirmation.
-- Port 2: 格恩/Gen central humidifier. Current workbook indicates RS-485 / Modbus RTU, 9600 8N1, FC03 reads, with writable controls that still need write function code and reset behavior confirmation.
-- Port 3: future meter/water meter reserve.
-- Port 4: future Daikin alternative or other equipment reserve.
-
-Never mix Hitachi HVAC and the humidifier on one RS-485 bus unless the user later has explicit vendor-backed compatibility evidence.
-
-## Hitachi Commissioning Boundary
-
-The Hitachi point table is enough to build read-only discovery, room mapping, status monitoring, and a basic control skeleton. It is not enough to hardcode final live writes.
-
-Required sequence:
-
-1. Confirm converter model, physical wiring, serial settings, slave address, protocol mode, function codes, and address offset.
-2. Read `4998`; only `4998=1` means controllable.
-3. Read `4997`; expected indoor unit count is 1 to 160.
-4. Read each unit's `Y`, system number, address number, model code, and state registers.
-5. Map rooms by operating one original wall controller at a time and watching which `Y` changes.
-6. Only after mapping, test one simple write at a time.
-7. Always do write-after-readback checks.
-8. Only then consider HA `climate` entities or a dedicated adapter service.
-
-Protected actions:
-
-- Do not auto-write `4999`; it clears cached unit info and can trigger a long rediscovery.
-- Do not expose `4004` batch shutdown as a normal dashboard button.
-- Do not write `B+85` half-degree control or `B+87` floor-heating control until Hitachi confirms the point-table ambiguity.
-- Do not use smart plugs to cut power to central HVAC, humidifiers, or gas water heaters.
-
-## Home Assistant Config Work
-
-The existing Hitachi HA config is intentionally read-only.
-
-Useful command:
-
-```bash
-python3 scripts/generate_hitachi_ha_yaml.py --units 4 --type rtuovertcp --output config/home-assistant/hitachi/hitachi_modbus_readonly.yaml
-```
-
-Only generate a real output file when the user asks or when there is confirmed site data. Otherwise inspect by writing to stdout.
-
-The example secrets file is a placeholder. Do not invent final IPs, ports, or slave IDs.
-
-## Script And Package Notes
-
-- `scripts/copy_to_projects.sh` syncs this package to `$HOME/Projects/smartHouse`.
-- The script does not implement `--help`; any argument still runs the sync.
-- The project root is not currently a git worktree.
-- `MANIFEST_SHA256.txt` covers the package contents and should be checked after bundle updates with:
-
-```bash
-shasum -a 256 -c MANIFEST_SHA256.txt
-```
-
-- There is a manifest-tracked Hitachi PDF under `references/日立中央空调/`. A same-topic PDF may also exist directly under `references/`; do not delete local extras without explicit user approval.
-
-## Editing Conventions
-
-- Preserve Chinese filenames and Chinese document titles.
-- Documents and tables intended for designers, contractors, electricians, weak-current installers, HVAC vendors, or renovation handoff must be written in Chinese. Do not use English room names or English prose in contractor-facing materials. Keep only necessary technical acronyms and product/protocol names such as PoE, RS-485, Zigbee, Cat6A, UPS, PDU, VLAN, SSID, Home Assistant, Modbus, MQTT, ESPHome, Bambu P2S, Mac mini, and RTX 3090 when exact terminology matters.
-- Keep `docs/current/` authoritative and versioned; move superseded drafts to `docs/archive/` only when the user asks for a package refresh.
-- Keep construction-facing documents practical: contractor checklists, exact room names, wire counts, conduit requirements, and site-confirmation items matter more than abstract smart-home theory.
-- When adding or changing diagrams, edit `diagrams/sources/*.dot` first and regenerate SVG/PNG outputs consistently.
-- When adding Home Assistant examples, default to read-only and clearly label any placeholders.
-- Do not add live write controls, destructive maintenance actions, or public remote-access patterns without explicit confirmation.
-- Do not add external projects as submodules by default. Use `external/README.md` and `docs/current/开源平台选型与自研边界_V1.md` before deciding a submodule is warranted.
-
-## Git And Repository Conventions
-
-- Version the design documents, diagrams, scripts, Home Assistant examples, and reference evidence that supports decisions.
-- Do not commit private HA `secrets.yaml`, real device credentials, LAN-only tokens, VPN keys, exported backups, or site-specific generated configs unless the user explicitly asks after review.
-- Use commits as design baselines: prefer small commits that say what decision or implementation stage changed.
-- Before major refactors or generated bundle refreshes, check `git status --short` and preserve user edits.
-- For future code, keep hardware-touching control paths conservative by default: read-only first, guarded writes second, automation policies last.
-
-## Open Decisions To Track
-
-- Final Hitachi converter model, installation manual, serial parameters, slave address, function codes, and address offset.
-- Final indoor/outdoor unit models, model-code table, alarm-code table, room mapping, and half-degree write behavior.
-- Whether Daikin DTA120A611 becomes only a comparison option or replaces the Hitachi baseline.
-- Humidifier complete model, write function code support, address base, A/B/GND wiring, terminal resistor requirements, and drain-command reset behavior.
-- Curtain protocol choice: Zigbee/Thread versus RS-485/Modbus.
-- Lighting circuit split, neutral wire and deep box availability, dimming needs, and multi-way control locations.
-- Final positions for desks, projector, screen, AV cabinet, door video device, washing machine, water treatment equipment, and water shutoff valve.
-- Storage room P2S shelf/bay position, independent outlet, clearance, optional exhaust/vent path, smoke/temperature monitoring, and heat/noise validation.
-- Final as-built line numbering, photos before sealing walls/ceilings, and acceptance records.
-
-## Operating Principle
-
-For future work, separate these states clearly:
-
-- Design assumption.
-- Vendor-confirmed protocol fact.
-- Construction baseline.
-- Site-verified wiring.
-- Read-only Home Assistant validation.
-- Write-control validation.
-- Long-term automation policy.
-
-Do not collapse them into one "done" status.
+`scripts/copy_to_projects.sh` performs a sync even with `--help`; inspect its source
+before use. Preserve user edits, local extras and private runtime configuration.
