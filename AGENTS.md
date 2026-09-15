@@ -46,3 +46,7 @@ long-term operation are distinct acceptance evidence.
 
 `scripts/copy_to_projects.sh` performs a sync even with `--help`; inspect its source
 before use. Preserve user edits, local extras and private runtime configuration.
+
+## Codex collaboration
+
+Astra owns renovation ambiguity, protocol and safety decisions, authority, review and integration. Prefer Luna for useful independent slices when the model and delegation are available; honor explicit model choices and keep small tasks with the owner. Luna may perform a bounded documentation, diagram-source, inventory discovery or content/link check with exact write scope and evidence. Suitable slices include tracing a V3.2 architecture reference, checking a room/device mapping, reviewing read-only Hitachi examples, or updating a `.dot` source and inspecting its affected output. Keep one writer per artifact and preserve Chinese site terminology. Existing project constraints and authorization requirements still apply.
