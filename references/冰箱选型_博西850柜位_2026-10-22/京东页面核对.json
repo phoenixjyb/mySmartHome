@@ -1,0 +1,68 @@
+{
+  "observed_window_beijing": "2026-10-22 20:55 to 21:06",
+  "method": "visible JD browser product page and expanded parameter panel",
+  "region_scope": "existing selected Beijing Chaoyang region; not confirmed final household address",
+  "account_mutations": false,
+  "checkout_verified": false,
+  "manufacturer_installation_approval": false,
+  "products": [
+    {
+      "model": "KC89BV163C",
+      "sku": "100247956289",
+      "url": "https://item.jd.com/100247956289.html",
+      "shop_label": "西门子家电京东自营旗舰店",
+      "capacity_L": 502,
+      "body_W_D_H_mm": [
+        842,
+        594,
+        1925
+      ],
+      "JD_reserved_W_D_H_mm": [
+        850,
+        600,
+        1930
+      ],
+      "ice_maker_label": "自动制冰机",
+      "dissipation_label": "底部前置散热",
+      "displayed_subsidy_after_price_CNY": "4776.44",
+      "subsidy_label_CNY": "842.90",
+      "daily_price_label_CNY": "6897.70",
+      "promotion_labels": [
+        "限时折上9.6折",
+        "满1享9折"
+      ],
+      "delivery_text": "明日18:00前付款，预计10月25日送达",
+      "fulfilment_label": "京东物流"
+    },
+    {
+      "model": "KFB89VA21C",
+      "sku": "100307744189",
+      "url": "https://item.jd.com/100307744189.html",
+      "shop_label": "博世家电京东自营旗舰店",
+      "capacity_L": 502,
+      "body_W_D_H_mm": [
+        842,
+        594,
+        1925
+      ],
+      "JD_reserved_W_D_H_mm": [
+        850,
+        600,
+        1930
+      ],
+      "ice_maker_label": "自动制冰机",
+      "panel_label": "玻璃",
+      "cooling_cycle_label": "单循环",
+      "dissipation_label": "底部散热",
+      "displayed_subsidy_after_price_CNY": "5596.84",
+      "subsidy_label_CNY": "987.68",
+      "other_price_label_CNY": "7655",
+      "promotion_labels": [
+        "限时折上9.6折",
+        "满1享9折"
+      ],
+      "delivery_text": "明日18:00前付款，预计10月25日送达",
+      "fulfilment_label": "京东物流"
+    }
+  ]
+}

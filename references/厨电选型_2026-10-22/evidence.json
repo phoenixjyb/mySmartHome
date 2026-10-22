@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-10-22",
+  "scope": "cabinet confirmation updated; fridge detailed evidence in separate directory; no site-fit acceptance",
+  "files": [
+    {
+      "name": "KFB89VA21C-spec.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 256854,
+      "sha256": "d6ef582f74861641d6206c447820e2908a126a8d83e7da802141be419c831bc6"
+    },
+    {
+      "name": "Midea-508WUFPZM-manual.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 3727306,
+      "sha256": "462717ef8421d3d9d54354177b62ee703fdc8eb265f2ef4f27fbe203891d7595"
+    },
+    {
+      "name": "Midea-GC5-manual.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 4787298,
+      "sha256": "a10c0a6b93c965045c5054b3ed11fe5d4c0232d9f6e12f0e9d7f80acd633be3f"
+    },
+    {
+      "name": "Midea-SX5-manual.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 9899627,
+      "sha256": "d1ccbd479a9128a013157fb136f1387605b0c5a6ae0b9122195a4ac2f9e378ad"
+    },
+    {
+      "name": "Panasonic-E531AX-M-manual.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 1943054,
+      "sha256": "45d8df17ab86750692f0a5d7b05877dd1d9e6c2824a60c763ba0836374b3b5c0"
+    },
+    {
+      "name": "Siemens-CS289ABS6W-install.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 3627141,
+      "sha256": "bedd7b19c1d33691bcf3901c18ea17c4d41621e7145a61e518315b5367528e34"
+    },
+    {
+      "name": "Siemens-KF89BV163C-spec.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 415583,
+      "sha256": "faf267f5c0e27658492fb1578e4aec63ad128711ba392b28523b359a6403f955"
+    },
+    {
+      "name": "Siemens-SE45ZB25KC-manual.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 4972372,
+      "sha256": "21cb813b217148062e4e166f10cc8a323168b2b0b50b4f52549811e04c73f6bb"
+    },
+    {
+      "name": "Toshiba-DWTQ5W-1327-sheet.pdf",
+      "kind": "downloaded-manufacturer-pdf",
+      "bytes": 14895368,
+      "sha256": "546a552c42a167067188219ee7e9d30033ea0e52e9e1922a555968a06834bab5"
+    },
+    {
+      "name": "P06厨房及冰箱局部.png",
+      "kind": "rendered-evidence",
+      "bytes": 34843,
+      "sha256": "eab3b61368f4bff1f5bfa97ae28885a56c1f1168bf26994a9eaa44a3f494c5c3"
+    },
+    {
+      "name": "SJU4HMB99C.pdf",
+      "kind": "archived-manufacturer-spec",
+      "bytes": 1001855,
+      "sha256": "5841fcd60acee90ed89377f098e83998777dc082049abe8fc3ee55dbbcbd0e0a"
+    },
+    {
+      "name": "SJV4HMX00C.pdf",
+      "kind": "archived-manufacturer-spec",
+      "bytes": 1522827,
+      "sha256": "947f82b1d9d457a93e500de0f4f50d4c9f197c80c58a95b8b748817004b82035"
+    },
+    {
+      "name": "东芝TQ5W安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 260803,
+      "sha256": "6632dd3451d40700f6eccd793ce92e5660b64b827f9db6c31d77964944f84a61"
+    },
+    {
+      "name": "博世SJU4HMB99C安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 112273,
+      "sha256": "91d1df1f2b691c7864f3a2abbbb397096294461a73cee7b6b2fc233bf7de3a44"
+    },
+    {
+      "name": "博世SJV4HMX00C安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 111710,
+      "sha256": "9fb8e9197c6b0bc89ce30c1539e947223a4a21061137d05e7ede9389b64b8b1d"
+    },
+    {
+      "name": "张帅-曹川北太平路橱柜确认图纸.pdf",
+      "kind": "user-provided-source-copy",
+      "bytes": 399879,
+      "sha256": "12bce45a7784358138807c598e00ae43908c1a43961deb7a01ef4b86a0e955eb"
+    },
+    {
+      "name": "松下E531AX安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 381130,
+      "sha256": "061efafc34e5a7bc6ebcd7f392c09097cdb602271bd78194b6852eeb3b2544f7"
+    },
+    {
+      "name": "橱柜确认图_厨房平面.png",
+      "kind": "rendered-evidence",
+      "bytes": 44552,
+      "sha256": "77b885ba4b07c777ea957239f0112be6a1b423d1ea843e19bda494e57de368ab"
+    },
+    {
+      "name": "橱柜确认图_电器立面.png",
+      "kind": "rendered-evidence",
+      "bytes": 85718,
+      "sha256": "3c47867b8f5fa1212e61c6f870fdf637f1ef28078d92010f591e4e417d05145c"
+    },
+    {
+      "name": "美的508安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 233048,
+      "sha256": "d20a2704855f7dd04d5a9dd7002bcf87ff08176c5289aac3a2c6ae0636a98add"
+    },
+    {
+      "name": "美的GC5地柜安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 267424,
+      "sha256": "6b7db75d2bde3b4bbee18b9b316565ec29acc3db4a703f48a42ef57d9b94cf2b"
+    },
+    {
+      "name": "美的SX5地柜安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 325838,
+      "sha256": "3ca3680dbdb28b11901d0dd166bd0a946766e714531bd467f1e536d30de49ba2"
+    },
+    {
+      "name": "西门子CS289安装图.png",
+      "kind": "rendered-evidence",
+      "bytes": 522738,
+      "sha256": "b0503765ab889d1068ce44b0b836ab5fcf3f298b3ab9d1527740de04bce766a9"
+    }
+  ],
+  "updated_at": "2026-10-22"
+}

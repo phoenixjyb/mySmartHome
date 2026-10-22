@@ -1,0 +1,38 @@
+{
+  "observed_utc": "2026-10-22T14:21:32.857635+00:00",
+  "scope": "kitchen appliance research static webpage",
+  "subpath": "kitchen-20261022",
+  "new_payloads": 9,
+  "new_images": 8,
+  "new_payload_bytes": 1775823,
+  "previous_payloads_preserved": 138,
+  "total_HTTPS_files_verified": 147,
+  "TLS_verified": true,
+  "HTTP_and_HTTPS_SHA256_and_MIME_verified": true,
+  "privacy_headers_verified": true,
+  "PhotoHouse_UI_bytes_unchanged": true,
+  "anonymous_session_status": 401,
+  "API_process_identity_unchanged": true,
+  "other_task_definitions_unchanged": 81,
+  "static_task_settings_except_Action_unchanged": true,
+  "browser": {
+    "browser": "Edge",
+    "desktop_width": 1462,
+    "mobile_width": 390,
+    "no_document_horizontal_overflow": true,
+    "all_8_images_loaded": true,
+    "image_lightbox": true,
+    "research_disclosure": true,
+    "console_errors_or_warnings": 0,
+    "tested_public_HTTPS": true
+  },
+  "household_phone_cellular_test": false,
+  "physical_installation_acceptance": false,
+  "source_HTML_sha256": "1fcbd8a722f9f1800d8f758677f342f0567d0db6dcc2e75fbbcc90f59550c2cc",
+  "public_HTML_sha256": "e70b05643a59cf48622cb8205cf807c619d82483afcff506d33c571f9f813927",
+  "notes": [
+    "A concurrent existing-site publication was detected by action guards before any live mutation; baseline was refreshed and its current files preserved.",
+    "Only the report HTML and 8 selected image crops were newly published; original cabinet PDF, raw handoff and account data were excluded.",
+    "JD prices are dated conditional displays; subsidy eligibility and final payable prices are unverified."
+  ]
+}
