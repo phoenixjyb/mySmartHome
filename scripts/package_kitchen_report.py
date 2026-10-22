@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse, base64, hashlib, json, re
 from html.parser import HTMLParser
 from pathlib import Path
+from family_report_navigation import with_home_navigation
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'exports/北京厨房电器选型_2026-10-22.html'
 class Audit(HTMLParser):
@@ -35,7 +36,7 @@ def package(dst:Path):
    if href[1:] and href[1:] not in audit.ids: raise ValueError('Broken anchor: '+href)
   elif not href.startswith('https://'):raise ValueError('Non-HTTPS public link: '+href)
  dst.mkdir(parents=True); (dst/'images').mkdir()
- files['index.html']=page.encode()
+ files['index.html']=with_home_navigation(page, '../home/index.html').encode()
  entries=[]
  for name,body in sorted(files.items()):
   target=dst/name; target.parent.mkdir(parents=True,exist_ok=True); target.write_bytes(body)

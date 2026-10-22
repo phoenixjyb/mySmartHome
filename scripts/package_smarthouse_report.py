@@ -11,6 +11,7 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
+from family_report_navigation import with_home_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "exports/智能家居采购与网络架构_2026-10-22.html"
@@ -50,6 +51,7 @@ def package(destination: Path) -> dict:
                 raise ValueError("Broken anchor: " + link)
         elif not link.startswith("https://"):
             raise ValueError("Only HTTPS source links and page anchors are allowed")
+    body = with_home_navigation(page, "../home/index.html").encode("utf-8")
     destination.mkdir(parents=True)
     (destination / "index.html").write_bytes(body)
     manifest = {"format": 1, "files": [{"path": "index.html", "bytes": len(body),

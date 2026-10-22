@@ -14,6 +14,7 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
+from family_report_navigation import with_home_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "exports/北京洗烘套装选型_2026-10-22.html"
@@ -100,7 +101,7 @@ def package(destination: Path) -> dict:
             raise ValueError("Broken public anchor: " + link)
         if not link.startswith(("https://", "#")):
             raise ValueError("Non-public repository link remains")
-    files["index.html"] = page.encode("utf-8")
+    files["index.html"] = with_home_navigation(page, "../home/index.html").encode("utf-8")
     entries = []
     for name, body in sorted(files.items()):
         (destination / name).write_bytes(body)

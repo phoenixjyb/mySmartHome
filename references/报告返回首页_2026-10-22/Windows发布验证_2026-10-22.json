@@ -1,0 +1,56 @@
+{
+  "observed_utc": "2026-10-22T15:14:28.758237+00:00",
+  "artifact": {
+    "routes": [
+      "kitchen-20261022/index.html",
+      "laundry-20261022/index.html",
+      "smart-home-20261022/index.html",
+      "v3/index.html",
+      "v2/index.html",
+      "index.html"
+    ],
+    "label": "返回总首页",
+    "fixed_bottom_right": true,
+    "relative_home_links": true,
+    "helper_sha256": "770bffd6aeff436c4eceaed085143d73f2aa663df11a2108180cbec9e38990c0",
+    "idempotent": true,
+    "outside_navigation_bytes_unchanged": true,
+    "all_six_regenerated_packages_match_deployed_html": true
+  },
+  "deployment": {
+    "replaced_html": 6,
+    "unchanged_payloads": 142,
+    "total_https_files_verified": 148,
+    "all_status_length_sha256_tls_verified": true,
+    "privacy_headers_verified": [
+      "no-store",
+      "no-referrer",
+      "noindex"
+    ],
+    "photohouse_ui_unchanged": true,
+    "photohouse_api_identity_unchanged": true,
+    "anonymous_session_status": 401,
+    "other_task_definitions_unchanged": 81,
+    "static_task_outside_actions_unchanged": true,
+    "static_service_running": true
+  },
+  "browser": {
+    "local_desktop_width": 1462,
+    "local_mobile_width": 390,
+    "each_viewport_six_return_controls_and_round_trips": "passed",
+    "minimum_touch_height_px": 44,
+    "button_fits_each_viewport": true,
+    "visual_inspection": "local same-package desktop and mobile passed",
+    "default_viewport_restored": true,
+    "public_browser_round_trips_and_screenshot": "not completed: CDP timeouts and native capture failure",
+    "actual_phone_cellular": "not performed"
+  },
+  "furniture_source": {
+    "commit": "c94c30101e5931fd250866e845b3efdc7484a1c2",
+    "branch": "codex/family-home-return-20261022",
+    "source_only_check": "passed",
+    "viewer_edits_check": "passed",
+    "full_asset_check": "failed: floorplan image is an LFS pointer in isolated worktree",
+    "packaging_asset_source": "read-only content-bearing checkout; 122 non-HTML payloads unchanged"
+  }
+}

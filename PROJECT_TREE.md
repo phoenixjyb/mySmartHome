@@ -70,6 +70,7 @@ smartHouse/
 │   ├── 设计师点位参考方案_V1.docx
 │   └── 明日设计师点位图套件_2026-07-05.docx
 ├── references/
+│   ├── 报告返回首页_2026-10-22/  # 六页导航更新的脱敏验证
 │   ├── 新家导航首页_2026-10-22/  # 脱敏的统一首页发布验证
 │   ├── 智能家居网页_2026-10-22/  # 脱敏的 Windows 发布验证记录
 │   ├── 洗烘套装选型_2026-10-22/  # 原始柜图、厂家安装证据和校验清单
@@ -80,6 +81,7 @@ smartHouse/
 │   ├── 日立中央空调/*.pdf
 │   └── 格恩通信协议列表格式-液晶控制器.xlsx
 └── scripts/
+    ├── family_report_navigation.py
     ├── package_family_report_home.py
     ├── generate_smarthouse_report.py
     ├── package_smarthouse_report.py
