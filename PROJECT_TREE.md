@@ -5,6 +5,7 @@ smartHouse/
 ├── README.md
 ├── CHANGELOG.md
 ├── docs/current/
+│   ├── 新家报告导航首页_Windows发布说明.md
 │   ├── 第一批可下单清单与机柜空间建议_2026-10-22.md
 │   ├── 智能家居网页_Windows静态发布说明.md
 │   ├── 双十一前智能家居采购复核_2026-10-22.md
@@ -59,6 +60,7 @@ smartHouse/
 ├── commissioning/README.md
 ├── external/README.md
 ├── exports/
+│   ├── 新家报告导航首页_2026-10-22.html
 │   ├── 智能家居采购与网络架构_2026-10-22.html
 │   ├── 北京洗烘套装选型_2026-10-22.html
 │   ├── 设计师沟通包_2026-07-05.docx
@@ -68,6 +70,7 @@ smartHouse/
 │   ├── 设计师点位参考方案_V1.docx
 │   └── 明日设计师点位图套件_2026-07-05.docx
 ├── references/
+│   ├── 新家导航首页_2026-10-22/  # 脱敏的统一首页发布验证
 │   ├── 智能家居网页_2026-10-22/  # 脱敏的 Windows 发布验证记录
 │   ├── 洗烘套装选型_2026-10-22/  # 原始柜图、厂家安装证据和校验清单
 │   ├── newFloorPlan.png
@@ -77,6 +80,7 @@ smartHouse/
 │   ├── 日立中央空调/*.pdf
 │   └── 格恩通信协议列表格式-液晶控制器.xlsx
 └── scripts/
+    ├── package_family_report_home.py
     ├── generate_smarthouse_report.py
     ├── package_smarthouse_report.py
     ├── templates/smarthouse_report.html

@@ -1,0 +1,39 @@
+{
+  "observed_utc": "2026-10-22T14:52:29.294497+00:00",
+  "artifact": {
+    "path": "home/index.html",
+    "bytes": 8538,
+    "sha256": "28444f0e5a473aff7dcaba80b08ccb30c637465af776214c0698447066cdd3a4",
+    "script_count": 0,
+    "third_party_assets": 0,
+    "main_report_count": 4,
+    "earlier_report_count": 2
+  },
+  "deployment": {
+    "existing_files_preserved": 147,
+    "new_files": 1,
+    "total_https_files_verified": 148,
+    "all_status_length_sha256_tls_verified": true,
+    "photohouse_ui_unchanged": true,
+    "anonymous_session_status": 401,
+    "photohouse_api_identity_unchanged": true,
+    "other_task_definitions_unchanged": 81,
+    "static_task_outside_actions_unchanged": true,
+    "privacy_headers_verified": [
+      "no-store",
+      "no-referrer",
+      "noindex"
+    ],
+    "static_service_running": true
+  },
+  "browser": {
+    "public_desktop_edge_width": 1462,
+    "public_desktop_visual": "passed",
+    "public_six_card_navigation_and_back": "passed",
+    "local_mobile_width": 390,
+    "local_mobile_scroll_width": 390,
+    "local_mobile_visual_and_anchors": "passed",
+    "default_viewport_restored": true,
+    "actual_phone_cellular": "not performed"
+  }
+}
