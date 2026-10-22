@@ -15,9 +15,9 @@ REPORT_LINKS = (
     "../kitchen-20261022/index.html",
     "../laundry-20261022/index.html",
     "../smart-home-20261022/index.html",
-    "../v3/index.html",
-    "../v2/index.html",
     "../index.html",
+    "../v2/index.html",
+    "../v3/index.html",
 )
 
 

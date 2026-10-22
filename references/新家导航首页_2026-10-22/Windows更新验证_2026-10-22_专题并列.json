@@ -1,0 +1,63 @@
+{
+  "observed_utc": "2026-10-22T15:44:55.440745+00:00",
+  "artifact": {
+    "path": "home/index.html",
+    "bytes": 7468,
+    "sha256": "cb7c3e223c675cfa3c858003c744041b4e754118e1612c5b09f7a45e0328803d",
+    "current_peer_report_count": 6,
+    "report_titles": [
+      "厨房电器",
+      "洗衣与烘干",
+      "智能家居与网络",
+      "家具总览",
+      "阳台茶几选型",
+      "餐桌选型"
+    ],
+    "route_order": [
+      "kitchen-20261022/index.html",
+      "laundry-20261022/index.html",
+      "smart-home-20261022/index.html",
+      "index.html",
+      "v2/index.html",
+      "v3/index.html"
+    ],
+    "retired_hierarchy_labels_removed": true,
+    "future_bed_report": "add as a peer only once published; no placeholder link"
+  },
+  "deployment": {
+    "replaced_files": 1,
+    "other_payloads_unchanged": 147,
+    "all_https_files_verified": 148,
+    "status_length_sha256_tls_and_privacy_headers_verified": true,
+    "photohouse_ui_unchanged": true,
+    "anonymous_session_status": 401,
+    "photohouse_api_identity_unchanged": true,
+    "other_tasks_unchanged": 81,
+    "static_task_outside_actions_unchanged": true,
+    "service_running": true
+  },
+  "browser": {
+    "desktop_width": 1462,
+    "desktop_scroll_width": 1462,
+    "six_cards_same_grid": true,
+    "six_equal_card_heights_px": 209.7890625,
+    "labels": [
+      "厨房电器",
+      "洗衣与烘干",
+      "智能家居与网络",
+      "家具总览",
+      "阳台茶几选型",
+      "餐桌选型"
+    ],
+    "old_hierarchy_labels_absent": true,
+    "mobile_width": 390,
+    "mobile_scroll_width": 390,
+    "mobile_single_column_width": 350,
+    "desktop_mobile_visual": "passed",
+    "viewport_restored": true,
+    "public_visual_and_clicks": "not completed: browser CDP and capture timed out",
+    "public_html_matches_visually_checked_local_package": true,
+    "actual_phone_cellular": "not performed",
+    "preview_service_stopped": true
+  }
+}
