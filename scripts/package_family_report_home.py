@@ -52,7 +52,7 @@ def package(destination: Path) -> dict:
     page.feed(source)
     report_links = [link for link in page.links if not link.startswith("#")]
     if tuple(report_links) != REPORT_LINKS:
-        raise ValueError("Expected exactly the six approved report routes, in order")
+        raise ValueError("Report routes must match REPORT_LINKS, in order")
     for link in page.links:
         if link.startswith("#") and link[1:] not in page.ids:
             raise ValueError("Broken page anchor")
