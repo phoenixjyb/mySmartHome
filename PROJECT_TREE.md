@@ -5,6 +5,7 @@ smartHouse/
 ├── README.md
 ├── CHANGELOG.md
 ├── docs/current/
+│   ├── 北京洗烘套装选型_600与610mm及博西C档_2026-10-22.md
 │   ├── 全屋智能系统总体架构_V3.2.md
 │   ├── 日立中央空调_Modbus接入与调试_V1.md
 │   ├── 日立室内机房间映射表.md
@@ -61,6 +62,7 @@ smartHouse/
 │   ├── 设计师点位参考方案_V1.docx
 │   └── 明日设计师点位图套件_2026-07-05.docx
 ├── references/
+│   ├── 洗烘套装选型_2026-10-22/  # 原始柜图、厂家安装证据和校验清单
 │   ├── newFloorPlan.png
 │   ├── designer-input/
 │   │   ├── 图例.png
