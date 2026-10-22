@@ -1,0 +1,49 @@
+{
+  "observed_utc": "2026-10-22T14:18:30.837182+00:00",
+  "revision": "第一批下单与机柜建议",
+  "artifact": {
+    "source": "exports/智能家居采购与网络架构_2026-10-22.html",
+    "bytes": 68915,
+    "sha256": "14c9697c16434f7cca63538ab728f5bae72fe159af407ef4265d57b36a17031b",
+    "procurement_cards": 29,
+    "first_order_rows": 8,
+    "first_order_devices": 13,
+    "existing_mac_mini": 1,
+    "new_mac_mini": 0
+  },
+  "deployment": {
+    "https_files_verified": 138,
+    "unchanged_other_payloads": 137,
+    "replaced_payloads": 1,
+    "all_status_200_length_sha256_tls_verified": true,
+    "photohouse_api_identity_unchanged": true,
+    "photohouse_ui_unchanged": true,
+    "anonymous_session_status": 401,
+    "other_task_definitions_unchanged": 81,
+    "static_task_outside_actions_unchanged": true,
+    "privacy_headers_verified": [
+      "no-store",
+      "no-referrer",
+      "noindex"
+    ],
+    "site_running": true
+  },
+  "validation": {
+    "python_js_and_page_anchors": "passed",
+    "first_order_quantities_and_source_package_equality": "passed",
+    "current_browser_visual_and_interaction": "not completed: browser read timeouts and native screen capture unavailable",
+    "actual_phone_cellular": "not performed",
+    "jd_live_price_stock_seller_selected_sku": "not verified"
+  },
+  "planning": {
+    "rack_site_reserve_mm_w_d_h": [
+      800,
+      800,
+      900
+    ],
+    "separate_front_aisle_planning_mm": 700,
+    "manufacturer_minimum_clearance": false,
+    "tower_ups_footprint_additional": true,
+    "exact_rack_sku_drawing": "pending"
+  }
+}

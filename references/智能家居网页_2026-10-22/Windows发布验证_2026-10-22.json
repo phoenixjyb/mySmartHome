@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-10-22T10:50:36.862565+00:00",
+  "artifact": {
+    "source": "exports/智能家居采购与网络架构_2026-10-22.html",
+    "bytes": 62680,
+    "sha256": "5b40fd1127e50086c9fddb06956a52d8198c66809297a5201c8e7c959132ebf9",
+    "procurement_cards": 29,
+    "network_branches": 5,
+    "remote_asset_dependencies": 0
+  },
+  "deployment": {
+    "host_role": "existing Windows family static report service",
+    "https_files_verified": 138,
+    "existing_files_preserved": 137,
+    "all_http_200_and_sha256_and_tls_verified": true,
+    "static_task_running": true,
+    "other_task_definitions_unchanged": 81,
+    "photohouse_api_process_identity_unchanged": true,
+    "photohouse_ui_bytes_unchanged": true,
+    "anonymous_photohouse_session_status": 401,
+    "privacy_headers_verified": [
+      "no-store",
+      "no-referrer",
+      "noindex"
+    ],
+    "share_url_recorded_in_git": false
+  },
+  "browser": {
+    "deployed_desktop_edge_visual": "passed",
+    "deployed_model_search": "passed",
+    "deployed_network_mode_switch": "passed",
+    "local_mobile_width_css_px": 390,
+    "local_mobile_horizontal_overflow": false,
+    "mobile_cellular_device_test": "not performed"
+  },
+  "remaining_acceptance": [
+    "商品实时库存与成交价",
+    "具体规格及到货实物兼容",
+    "现场网络与设备安装",
+    "家庭手机移动网络访问"
+  ]
+}
