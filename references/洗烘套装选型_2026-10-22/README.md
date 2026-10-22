@@ -40,9 +40,13 @@ python3 scripts/generate_laundry_report.py
 
 完整正文和19品牌表从Markdown生成；顶部候选摘要位于生成脚本中，更新研究时应同步复核。HTML生成不刷新价格、库存或厂家参数。
 
+需要沿用Windows家庭报告服务时，先按[Windows静态发布说明](../../docs/current/洗烘报告_Windows静态发布说明.md)核对当前服务，再运行`python3 scripts/package_laundry_report.py /absolute/new/package/laundry`生成公开包。公开包将内嵌图片改为同源资源，并将本机资料链接改为页内入口；打包命令本身不部署或重启服务。
+
+[Windows发布验证摘要](Windows发布验证_2026-10-22.json)记录137个文件的公网核验和桌面／手机宽度浏览器结果，不包含主机或随机分享路径。
+
 ## 校验
 
-本目录的`SHA256SUMS.txt`覆盖Markdown研究报告、离线HTML、HTML生成脚本与模板、目录说明及本目录证据文件（不含校验文件本身）。在仓库根目录执行：
+本目录的`SHA256SUMS.txt`覆盖Markdown研究报告、离线HTML、HTML生成／公开打包脚本与模板、发布说明、目录说明及本目录证据文件（不含校验文件本身）。在仓库根目录执行：
 
 ```sh
 shasum -a 256 -c references/洗烘套装选型_2026-10-22/SHA256SUMS.txt

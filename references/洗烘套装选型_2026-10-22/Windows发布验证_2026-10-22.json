@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-22",
+  "verification_utc": "2026-10-22T08:39:00.298965+00:00",
+  "source_html_commit": "33b1e8f",
+  "source_html_sha256": "3daa98be99e997f4785d0b8fea3be3c9f88c980e66c1acbb18a9d988371ed488",
+  "public_html_sha256": "c273ec3882d4a5e001912b434f2e6fce823a110ffb300f6285288662b2ac9186",
+  "package_script_sha256": "57db11f7cb813685692eef3e3773b921af012b26e52772882f60c5b68b9de0a9",
+  "publication": "verified",
+  "new_report_payloads": 12,
+  "unique_report_images": 11,
+  "total_allowlisted_payloads": 137,
+  "unchanged_furniture_payloads": 125,
+  "HTTPS_all_payload_hashes_matched": true,
+  "TLS_certificate_verification": true,
+  "privacy_headers_verified": true,
+  "PhotoHouse_UI_bytes_preserved": true,
+  "PhotoHouse_anonymous_session_denied": true,
+  "PhotoHouse_API_process_identity_preserved": true,
+  "other_task_definitions_unchanged": 81,
+  "static_task_principal_triggers_settings_executable_preserved": true,
+  "browser": {
+    "publicBrowser": "passed",
+    "TLSVerification": true,
+    "HTMLByteHashMatched": true,
+    "imagesLoaded": 11,
+    "brandRows": 19,
+    "filters": true,
+    "search": true,
+    "fullTextLink": true,
+    "lightbox": true,
+    "viewports": [
+      1440,
+      390
+    ],
+    "pageErrors": 0,
+    "cellularDevice": "not tested"
+  },
+  "family_phone_cellular_test": "not performed",
+  "private_host_share_link_config_receipts": "kept outside Git",
+  "all_payload_media_types_verified": true
+}
