@@ -1,6 +1,6 @@
 # 洗烘套装选型证据归档（2026-10-22）
 
-[完整研究报告](../../docs/current/北京洗烘套装选型_600与610mm及博西C档_2026-10-22.md)
+[完整研究报告](../../docs/current/北京洗烘套装选型_600与610mm及博西C档_2026-10-22.md) · [离线图文HTML](../../exports/北京洗烘套装选型_2026-10-22.html)
 
 本目录保存本次调研实际使用的关键原始图片、厂家PDF和公开H5数据。没有保存京东登录状态、个人配送地址、账号信息或浏览器缓存。柜体图来自用户附件。资料用于复核候选，不能替代原厂现场安装确认；未购买、未联系商家。
 
@@ -21,14 +21,28 @@
 | [博世WWJ752Y10W尺寸表.pdf](博世WWJ752Y10W尺寸表.pdf) | [原厂PDF](https://media3.bosch-home.com/Documents/specsheet/zh-CN/WWJ752Y10W.pdf)：565名义深与610外廓 |
 | [西门子WW52J7Y00W尺寸表.pdf](西门子WW52J7Y00W尺寸表.pdf) | [原厂PDF](https://media3.bosch-home.com/Documents/specsheet/zh-CN/WW52J7Y00W.pdf)：C档白色推荐精确洗衣机 |
 | [西门子WW52J7I80W尺寸表.pdf](西门子WW52J7I80W尺寸表.pdf) | [原厂PDF](https://media3.bosch-home.com/Documents/specsheet/zh-CN/WW52J7I80W.pdf)：另一精确洗衣机的565/610外廓 |
+| [博世WWJ752Y10W-尺寸图.png](博世WWJ752Y10W-尺寸图.png) | 上述博世PDF已核尺寸页的渲染副本，供HTML直接展示 |
+| [西门子WW52J7Y00W-尺寸图.png](西门子WW52J7Y00W-尺寸图.png) | 上述西门子PDF已核尺寸页的渲染副本，供HTML直接展示 |
 | [美的MGH20AIR说明书.pdf](美的MGH20AIR说明书.pdf) | [原厂PDF](https://dsdcp.smartmidea.net/mcsp/prod/20250110/77ff6caad54445de80b397a3aed40a90.pdf)：600＋后30的排除依据 |
 | [小天鹅TG10VE40洗衣机说明书.pdf](小天鹅TG10VE40洗衣机说明书.pdf) | [原厂PDF](https://dsdcp.smartmidea.net/mcsp/prod/20250321/da045930008e488abd4a3bfbb7bcbba0.pdf)：582＋后30的排除依据 |
 
 松下商品图的原始URL保留在研究报告对应章节；通用安装图来源为同一京东商品详情页。PNG副本仅为读取格式转换，未修改尺寸内容。H5 JSON只规范化换行、缩进和行尾空白，已校验解析后的数据完全相同。未单独留存的其他品牌参数仍可按报告给出的厂家页面追溯。
 
+## HTML图文版
+
+HTML内嵌11张已核图片，无需联网或单独复制图片即可阅读，包含A/B/C筛选、C档后留空情景估算、品牌搜索、图片放大及打印样式。PDF和Markdown链接需保留仓库目录或访问厂家来源。
+
+更新Markdown、图片或页面内容后，在仓库根目录重新生成：
+
+```sh
+python3 scripts/generate_laundry_report.py
+```
+
+完整正文和19品牌表从Markdown生成；顶部候选摘要位于生成脚本中，更新研究时应同步复核。HTML生成不刷新价格、库存或厂家参数。
+
 ## 校验
 
-本目录的`SHA256SUMS.txt`覆盖研究报告、目录说明及本目录证据文件（不含校验文件本身）。在仓库根目录执行：
+本目录的`SHA256SUMS.txt`覆盖Markdown研究报告、离线HTML、HTML生成脚本与模板、目录说明及本目录证据文件（不含校验文件本身）。在仓库根目录执行：
 
 ```sh
 shasum -a 256 -c references/洗烘套装选型_2026-10-22/SHA256SUMS.txt
